@@ -18,18 +18,30 @@
                     </div>
                     <div class="h-2/3 w-[1px] bg-gradient-to-b from-transparent via-gray-50 to-transparent"></div>
                     <div class="px-5 flex justify-center items-center gap-x-1">
-                        <a class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
+                        <a data-tooltip-target="tooltip-home" data-tooltip-placement="bottom" class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
                             <i class="cp cp-home-o"></i>
                         </a>
-                        <a class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
+                        <div id="tooltip-home" role="tooltip" class="absolute z-10 !left-8 invisible inline-block px-3 py-2 text-[10px] font-lato tracking-widest uppercase transition-opacity duration-300 shadow-sm opacity-0 bg-white text-gray-600">
+                            Home
+                        </div>
+                        <a data-tooltip-target="tooltip-message" data-tooltip-placement="bottom" class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
                             <i class="cp cp-envelope-alt-o"></i>
                         </a>
-                        <a class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
+                        <div id="tooltip-message" role="tooltip" class="absolute z-10 !left-8 invisible inline-block px-3 py-2 text-[10px] font-lato tracking-widest uppercase transition-opacity duration-300 shadow-sm opacity-0 bg-white text-gray-600">
+                            Message
+                        </div>
+                        <a data-tooltip-target="tooltip-archive" data-tooltip-placement="bottom" class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
                             <i class="cp cp-save-o"></i>
                         </a>
-                        <a class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
+                        <div id="tooltip-archive" role="tooltip" class="absolute z-10 !left-8 invisible inline-block px-3 py-2 text-[10px] font-lato tracking-widest uppercase transition-opacity duration-300 shadow-sm opacity-0 bg-white text-gray-600">
+                            Archive
+                        </div>
+                        <a data-tooltip-target="tooltip-theme" data-tooltip-placement="bottom" class="w-8 h-8 flex justify-center items-center rounded-full text-xs border border-opacity-25 border-white" href="#">
                             <i class="cp cp-cog-o"></i>
                         </a>
+                        <div id="tooltip-theme" role="tooltip" class="absolute z-10 !left-8 invisible inline-block px-3 py-2 text-[10px] font-lato tracking-widest uppercase transition-opacity duration-300 shadow-sm opacity-0 bg-white text-gray-600">
+                            Theme by glenthemes
+                        </div>
                     </div>
                     <div class="h-2/3 w-[1px] bg-gradient-to-b from-transparent via-gray-50 to-transparent"></div>
                     <div class="w-1/4 px-5 flex justify-start items-center gap-x-2 font-montserrat tracking-wider text-[8px]">
@@ -51,120 +63,142 @@
                 </div>
             </div>
         </div>
-        <div class="bg-[url('../img/pattern.png')] container mx-auto min-h-screen">
-            <div class="flex justify-center gap-x-12 sticky top-10">
-                <div class="flex-1 max-w-xl h-fit sticky top-20">
-                    <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
-                        <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">The Three Fates</h2>
-                        <hr class="my-3 border-gray-500">
-                        <div class="font-lato">
-                            <p class="mb-3">
-                            This is the <span class="font-semibold">static preview</span> of glenthemes' twenty-fourth theme, Lachesis. This theme was created specifically for art blogs. All art displayed & included in this preview are by me (anyilia).
-                            <br>
-                            This is where your description goes.
-                            </p>
-                            <p class="mb-3">Please read the terms of use before using this theme. Enjoy!</p>
+        <div class="bg-[url('../img/pattern.png')] min-h-screen">
+            <div class="container mx-auto">
+                <div class="flex justify-center gap-x-12 sticky top-10">
+                    <div class="flex-1 max-w-xl h-fit sticky top-20">
+                        <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
+                            <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">The Three Fates</h2>
+                            <hr class="my-3 border-gray-500">
+                            <div class="font-lato">
+                                <p class="mb-3">
+                                This is the <span class="font-semibold">static preview</span> of glenthemes' twenty-fourth theme, Lachesis. This theme was created specifically for art blogs. All art displayed & included in this preview are by me (anyilia).
+                                <br>
+                                This is where your description goes.
+                                </p>
+                                <p class="mb-3">Please read the terms of use before using this theme. Enjoy!</p>
+                            </div>
+                        </div>
+                        <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
+                            <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">Navigation</h2>
+                            <hr class="my-3 border-gray-500">
+                            <div class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 uppercase text-fake-black font-lato">
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 1</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 2</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 3</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 4</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 5</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 6</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 7</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 8</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 9</a>
+                                <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 10</a>
+                            </div>
+                        </div>
+                        <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
+                            <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">Pagination</h2>
+                            <hr class="my-3 border-gray-500">
+                            <div class="mt-5 flex justify-center gap-x-2 text-xs text-fake-black font-lato">
+                                <a class="py-2 px-3 bg-white" href="#">1</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">2</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">3</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">4</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">5</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">6</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">7</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">8</a>
+                                <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">»</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
-                        <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">Navigation</h2>
-                        <hr class="my-3 border-gray-500">
-                        <div class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 uppercase text-fake-black font-lato">
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 1</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 2</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 3</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 4</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 5</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 6</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 7</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 8</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 9</a>
-                            <a class="py-2 px-6 text-center bg-gray-100" href="#">Custom Link 10</a>
+                    <div class="flex-[3_3_0%] max-w-3xl">
+                        <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
+                            <h3 class="text-center uppercase font-montserrat font-semibold tracking-[0.25rem]"><a href="#">Get the code here »</a></h3>
+                            <hr class="my-3 border-gray-500">
+                            <div class="mt-5 justify-center gap-x-2 font-lato">
+                                <h1 class="text-xl font-bold">TERMS OF USE:</h1>
+                                <div>1) Do not remove the theme credit.</div>
+                                <div>2) Do not repost/redistribute my themes.</div>
+                                <div>3) Do not take parts of the code and use it as your own.</div>
+                                <div>4) Do not use my themes as a base code.</div>
+                                <div>5) Do not mix my themes together.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
-                        <h2 class="text-2xl font-playfair uppercase tracking-wide text-right">Pagination</h2>
-                        <hr class="my-3 border-gray-500">
-                        <div class="mt-5 flex justify-center gap-x-2 text-xs text-fake-black font-lato">
-                            <a class="py-2 px-3 bg-white" href="#">1</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">2</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">3</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">4</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">5</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">6</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">7</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">8</a>
-                            <a class="py-2 px-3 border-b border-fake-black text-center bg-gray-100" href="#">»</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-[3_3_0%] max-w-3xl">
-                    <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
-                        <h3 class="text-center uppercase font-montserrat font-semibold tracking-[0.25rem]"><a href="#">Get the code here »</a></h3>
-                        <hr class="my-3 border-gray-500">
-                        <div class="mt-5 justify-center gap-x-2 font-lato">
-                            <h1 class="text-xl font-bold">TERMS OF USE:</h1>
-                            <div>1) Do not remove the theme credit.</div>
-                            <div>2) Do not repost/redistribute my themes.</div>
-                            <div>3) Do not take parts of the code and use it as your own.</div>
-                            <div>4) Do not use my themes as a base code.</div>
-                            <div>5) Do not mix my themes together.</div>
-                        </div>
-                    </div>
-                    <div class="my-12 p-6 bg-white text-gray-700 leading-relaxed">
-                        <h3 class="text-center uppercase font-montserrat font-semibold tracking-[0.25rem]">Theme Features</h3>
-                        <hr class="my-3 border-gray-500">
-                        <div class="mt-5 justify-center gap-x-2 font-lato list-disc">
-                            <ul class="list-[circle] ml-14">
-                                <li>22 color options</li>
-                                <li>customizable post sizes</li>
-                                <li>customizable post padding</li>
-                                <li>customizable font size</li>
-                                <li>customizable photoset gutter width</li>
-                                <li>customizable post margins</li>
-                                <li>“Like” and “reblog” buttons</li>
-                                <li>optional header image</li>
-                                <li>optional header welcome text</li>
-                                <li>optional header section</li>
-                                <li>up to 10 custom links</li>
-                                <li>optional photo fade</li>
-                                <li>optional monochrome posts hover</li>
-                                <li>optional smooth scrolling</li>
-                                <li>search bar & manually inserted search suggestions</li>
-                                <li>sticky sidebar</li>
-                            </ul>
-                            <p class="my-4">Header image:</p>
-                            <ul class="list-[circle] ml-14">
+                        <div class="my-12 p-5 bg-white text-gray-700 leading-relaxed">
+                            <h3 class="text-center uppercase font-montserrat font-semibold tracking-[0.25rem]">Theme Features</h3>
+                            <hr class="my-3 border-gray-500">
+                            <div class="mt-5 justify-center gap-x-2 font-lato list-disc">
+                                <ul class="list-[circle] ml-14">
+                                    <li>22 color options</li>
+                                    <li>customizable post sizes</li>
+                                    <li>customizable post padding</li>
+                                    <li>customizable font size</li>
+                                    <li>customizable photoset gutter width</li>
+                                    <li>customizable post margins</li>
+                                    <li>“Like” and “reblog” buttons</li>
+                                    <li>optional header image</li>
+                                    <li>optional header welcome text</li>
+                                    <li>optional header section</li>
+                                    <li>up to 10 custom links</li>
+                                    <li>optional photo fade</li>
+                                    <li>optional monochrome posts hover</li>
+                                    <li>optional smooth scrolling</li>
+                                    <li>search bar & manually inserted search suggestions</li>
+                                    <li>sticky sidebar</li>
+                                </ul>
+                                <p class="my-4">Header image:</p>
+                                <ul class="list-[circle] ml-14">
 
-                                <li>the height is manually inserted in the “header image height” text field the rest of the header dimensions will adjust based on this height</li>
-                                <li>a transparent image / render is recommended</li>
-                            </ul>
-                            <p class="my-4">Header “welcome” text:</p>
-                            <ul class="list-[circle] ml-14">
+                                    <li>the height is manually inserted in the “header image height” text field the rest of the header dimensions will adjust based on this height</li>
+                                    <li>a transparent image / render is recommended</li>
+                                </ul>
+                                <p class="my-4">Header “welcome” text:</p>
+                                <ul class="list-[circle] ml-14">
 
-                                <li>the text section is vertically aligned based on your header image height aka it will always be in the center, so don’t worry about the text amount</li>
-                                <li>this is different from your own blog’s description</li>
-                            </ul>
-                            <p class="my-4">Search bar:</p>
-                            <ul class="list-[circle] ml-14">
+                                    <li>the text section is vertically aligned based on your header image height aka it will always be in the center, so don’t worry about the text amount</li>
+                                    <li>this is different from your own blog’s description</li>
+                                </ul>
+                                <p class="my-4">Search bar:</p>
+                                <ul class="list-[circle] ml-14">
 
-                                <li>search suggestions are manually inserted in the text fields</li>
-                                <li>if you don’t want to enable suggestions, clear the text the in the text field</li>
-                                <li>you can have up to 5 suggestions<br>if you would like to add more, please contact me</li>
-                                <li>check out this post for more information</li>
-                            </ul>
-                            <p class="my-4">Pagination:</p>
-                            <ul class="list-[circle] ml-14">
+                                    <li>search suggestions are manually inserted in the text fields</li>
+                                    <li>if you don’t want to enable suggestions, clear the text the in the text field</li>
+                                    <li>you can have up to 5 suggestions<br>if you would like to add more, please contact me</li>
+                                    <li>check out this post for more information</li>
+                                </ul>
+                                <p class="my-4">Pagination:</p>
+                                <ul class="list-[circle] ml-14">
 
-                                <li>“pagination in the sidebar” option ON: self explanatory<br>“pagination in the sidebar” option OFF: pagination will appear at the END/bottom of the posts on the current page</li>
-                            </ul>
-                            <p class="my-4">Credits:</p>
-                            <ul class="list-[circle] ml-14">
+                                    <li>“pagination in the sidebar” option ON: self explanatory<br>“pagination in the sidebar” option OFF: pagination will appear at the END/bottom of the posts on the current page</li>
+                                </ul>
+                                <p class="my-4">Credits:</p>
+                                <ul class="list-[circle] ml-14">
 
-                                <li>all artwork seen & included in this preview are by me!</li>
-                                <li>from my art blog: @anyilia !!</li>
-                                <li>“Saturn Icons” font by saturnthms</li> 
-                            </ul>
+                                    <li>all artwork seen & included in this preview are by me!</li>
+                                    <li>from my art blog: @anyilia !!</li>
+                                    <li>“Saturn Icons” font by saturnthms</li> 
+                                </ul>
+                                <p>
+                                <i class="text-sm">Please <a class="underline" href="#">ask</a> if you have any questions/problems with this theme, I will try to answer as best as I can.</i>
+                                </p>
+                            </div>
+                            <div class="mt-2 px-2 py-2 flex items-center text-xs tracking-widest bg-gray-100 text-gray-600">
+                                <a class="flex items-center hover:text-gray-400 duration-500" href="#">
+                                    <i class="cp cp-link text-sm"></i>
+                                    <span class="ml-1 uppercase text-xs font-lato">OCTOBER 16TH, 2017</span>
+                                    <span class="ml-2">12:58AM</span>
+                                </a>
+                                <a class="ml-4 hover:text-gray-400 duration-500" href="#">
+                                    <span>0 NOTES</span>
+                                </a>
+                                <p class="flex-1"></p>
+                                <i class="mr-2 cp cp-heart-o"></i>
+                                <i class="cp cp-reblog"></i>
+                            </div>
+                            <div class="mt-2 font-lato text-right uppercase tracking-widest text-xs">
+                                <a href="#">#Do not reblog this post</a>
+                                <a href="#">#Theme info only</a>
+                            </div>
                         </div>
                     </div>
                 </div>
