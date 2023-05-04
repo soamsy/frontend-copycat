@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         elsie: ["Elsie", "sans-serif"],
         montserrat: ["montserrat", "monospace"],
+        lora: ["Lora", "serif"],
+        playfair: ["Playfair Display", "serif"],
+        lato: ["Lato", "sans-serif"],
       }
     },
   },
