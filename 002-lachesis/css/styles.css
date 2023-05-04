@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Elsie";
+  src: url("../webfonts/Elsie/Elsie-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../webfonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
