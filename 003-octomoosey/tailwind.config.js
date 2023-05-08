@@ -7,6 +7,15 @@ module.exports = {
         "scarlet": "#ff6f61",
       },
       fontFamily: {
+      },
+      animation: {
+        fadeUp: "fadeUp 0.8s ease-in forwards"
+      },
+      keyframes: {
+        fadeUp: {
+          "0%": { opacity: 0, transform: "translateY(5rem)" },
+          "100%": { opacity: 1, transform: "translateY(0)" }
+        }
       }
     },
   },
