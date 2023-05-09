@@ -5,3 +5,19 @@
 body {
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 }
+
+@layer utilities {
+  .stripes {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent 0.0rem,
+      transparent 0.12rem,
+      transparent 0.12rem,
+      black 0.13rem,
+      black 0.13rem,
+      black 0.25rem,
+      black 0.25rem,
+      transparent 0.26rem
+    );
+  }
+}
