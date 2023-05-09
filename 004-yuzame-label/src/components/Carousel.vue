@@ -40,18 +40,12 @@
                 let zIndex = 0;
                 switch (place) {
                     case 0:
-                        zIndex = 5;
-                        break;
-                    case 1:
-                        zIndex = 4;
-                        break;
-                    case -1:
                         zIndex = 3;
                         break;
-                    case 2:
+                    case 1:
                         zIndex = 2;
                         break;
-                    case -2:
+                    case -1:
                         zIndex = 1;
                         break;
                 }
