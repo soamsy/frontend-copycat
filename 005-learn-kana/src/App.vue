@@ -36,6 +36,12 @@ const updateTable = (table, index, value) => {
     table.toggles.delete(index);
 }
 
+const playAudio = () => {
+  const [_, romaji] = selected.value;
+  const audio = new Audio(`https://itazuraneko.neocities.org/learn/kana/audio/${romaji}.mp3`);
+  audio.play();
+};
+
 const getNext = () => {
   let count = hiragana.toggles.size + hiraganaCombinations.toggles.size + katakana.toggles.size + katakanaCombinations.toggles.size;
   console.log(count);
@@ -100,7 +106,7 @@ watch(input, () => {
           <div v-if="error" class="text-red-500 text-2xl">{{ error }}</div>
         </div>
         <div class="my-2 self-start flex gap-x-4">
-          <button class="py-2 px-3 shadow-md underline-button">Play sound</button>
+          <button @click="playAudio" class="py-2 px-3 shadow-md underline-button">Play sound</button>
           <button class="py-2 px-3 shadow-md underline-button">Stroke order</button>
         </div>
         <div v-if="history.length > 0" class="mt-6 self-start"> {{ successes }} / {{ history.length }}</div>
