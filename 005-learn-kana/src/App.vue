@@ -28,6 +28,7 @@ const input = ref('');
 const successes = ref(0);
 const error = ref('');
 const history = reactive([]);
+const showStrokeOrder = ref(false);
 
 const updateTable = (table, index, value) => {
   if (value) 
@@ -41,6 +42,11 @@ const playAudio = () => {
   const audio = new Audio(`https://itazuraneko.neocities.org/learn/kana/audio/${romaji}.mp3`);
   audio.play();
 };
+
+const strokeOrderUrl = () => {
+  const [kana, _] = selected.value;
+  return `https://itazuraneko.neocities.org/learn/kana/stroke/${kana}.gif`;
+}
 
 const getNext = () => {
   let count = hiragana.toggles.size + hiraganaCombinations.toggles.size + katakana.toggles.size + katakanaCombinations.toggles.size;
@@ -81,6 +87,7 @@ watch(input, () => {
     }
     input.value = '';
     error.value = '';
+    showStrokeOrder.value = false;
   } else if (romaji.startsWith(input.value)) {
     return;
   } else {
@@ -99,7 +106,8 @@ watch(input, () => {
       <h1 class="text-3xl">Learn kana</h1>
       <hr class="my-6 border-dashed">
       <div class="m-4 p-6 shadow-xl flex flex-col items-center">
-        <div class="text-9xl text-center">{{ selected?.[0] }}</div>
+        <div v-if="showStrokeOrder"><img :src="strokeOrderUrl()" @error="showStrokeOrder = false" alt=""></div>
+        <div v-if="!showStrokeOrder" class="text-9xl text-center">{{ selected?.[0] }}</div>
         <input v-model="input" class="my-6 w-72 bg-zinc-800 text-center" type="text">
         <div class="min-h-[2rem]">
           <div v-if="!error && history.length == 0" class="text-lg">Hover over the kana to show its romanization and type the answer.</div>
@@ -107,7 +115,7 @@ watch(input, () => {
         </div>
         <div class="my-2 self-start flex gap-x-4">
           <button @click="playAudio" class="py-2 px-3 shadow-md underline-button">Play sound</button>
-          <button class="py-2 px-3 shadow-md underline-button">Stroke order</button>
+          <button @click="showStrokeOrder = true" class="py-2 px-3 shadow-md underline-button">Stroke order</button>
         </div>
         <div v-if="history.length > 0" class="mt-6 self-start"> {{ successes }} / {{ history.length }}</div>
       </div>
