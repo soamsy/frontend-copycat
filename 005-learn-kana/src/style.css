@@ -9,8 +9,18 @@
         border-bottom: 1px solid transparent;
         transition: border-bottom-color 0.1s ease-in-out;
     }
-    
+
     .underline-button:hover {
         border-bottom-color: white;
+    }
+
+    .link {
+        color: rgb(85, 187, 241);
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: white;
+        border-bottom: 1px dotted;
     }
 }
