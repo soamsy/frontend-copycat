@@ -1,6 +1,7 @@
 <script setup>
-  import KanaTable from './components/KanaTable.vue'
-import { ref, reactive, watch, onMounted, onUpdated } from 'vue';
+
+import KanaTable from './components/KanaTable.vue'
+import { ref, reactive, watch } from 'vue';
 import tables from './tables.js';
 
 let hiragana = reactive({
