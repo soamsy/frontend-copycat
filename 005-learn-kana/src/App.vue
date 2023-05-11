@@ -74,7 +74,6 @@ const getNext = () => {
   return options[index];
 }
 
-const selected = ref(getNext());
 
 watch(input, () => {
   if (!input.value)
@@ -97,6 +96,34 @@ watch(input, () => {
   }
 })
 
+const saveToggles = (field, table) => {
+  if (table.toggles.size === 0) {
+    localStorage.removeItem(field);
+  } else {
+    localStorage.setItem(field, JSON.stringify(Array.from(table.toggles)));
+  }
+}
+
+const loadToggles = (field, table) => {
+  const toggles = localStorage.getItem(field);
+  if (!toggles)
+    return;
+  JSON.parse(toggles).forEach(index => table.toggles.add(index));
+}
+
+watch([hiragana, hiraganaCombinations, katakana, katakanaCombinations], () => {
+  saveToggles('hiragana', hiragana);
+  saveToggles('hiraganaCombinations', hiraganaCombinations);
+  saveToggles('katakana', katakana);
+  saveToggles('katakanaCombinations', katakanaCombinations);
+})
+
+loadToggles('hiragana', hiragana);
+loadToggles('hiraganaCombinations', hiraganaCombinations);
+loadToggles('katakana', katakana);
+loadToggles('katakanaCombinations', katakanaCombinations);
+
+const selected = ref(getNext());
 
 </script>
 
