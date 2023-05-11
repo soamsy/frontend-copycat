@@ -29,6 +29,7 @@ const successes = ref(0);
 const error = ref('');
 const history = reactive([]);
 const showStrokeOrder = ref(false);
+const isHovering = ref(false);
 
 const updateTable = (table, index, value) => {
   if (value) 
@@ -88,6 +89,7 @@ watch(input, () => {
     input.value = '';
     error.value = '';
     showStrokeOrder.value = false;
+    isHovering.value = false;
   } else if (romaji.startsWith(input.value)) {
     return;
   } else {
@@ -105,9 +107,12 @@ watch(input, () => {
     <div class="py-4 px-2 container mx-auto lg:max-w-3xl">
       <h1 class="text-3xl">Learn kana</h1>
       <hr class="my-6 border-dashed">
-      <div class="m-4 p-6 shadow-xl flex flex-col items-center">
-        <div v-if="showStrokeOrder"><img :src="strokeOrderUrl()" @error="showStrokeOrder = false" alt=""></div>
-        <div v-if="!showStrokeOrder" class="text-9xl text-center">{{ selected?.[0] }}</div>
+      <div class="m-4 p-6 pt-1 shadow-xl flex flex-col items-center">
+        <div class="min-h-[3rem]">
+          <div class="text-3xl" v-show="isHovering"> {{ selected?.[1] }}</div>
+        </div>
+        <div @mouseover="isHovering = true" @mouseleave="isHovering = false" v-if="showStrokeOrder"><img :src="strokeOrderUrl()" @error="showStrokeOrder = false" alt=""></div>
+        <div @mouseover="isHovering = true" @mouseleave="isHovering = false" v-if="!showStrokeOrder" class="text-9xl text-center">{{ selected?.[0] }}</div>
         <input v-model="input" class="my-6 w-72 bg-zinc-800 text-center" type="text">
         <div class="min-h-[2rem]">
           <div v-if="!error && history.length == 0" class="text-lg">Hover over the kana to show its romanization and type the answer.</div>
