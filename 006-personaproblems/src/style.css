@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+@layer utilities {
+    .ransom-letter {
+        @apply inline-block;
+        padding: 0 .125rem;
+    }
+    
+    .rl-bw {
+        @apply ransom-letter bg-white text-black;
+    }
+    
+    .rl-rb {
+        @apply ransom-letter bg-black text-persona-red;
+    }
+    
+    .p-quote {
+        @apply text-4xl font-extrabold text-center relative leading-tight;
+    }
+}
