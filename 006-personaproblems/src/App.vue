@@ -1,10 +1,34 @@
 <script setup>
+import { ref, reactive } from 'vue';
 import Carousel from './components/Carousel.vue';
+import WhatIsTranslation from './components/WhatIsTranslation.vue';
+const selected = ref('different');
+const faq = reactive(new Map());
+faq.set('different', {
+  question: 'How does "translation" differ from "localization"?',
+  component: WhatIsTranslation
+});
+faq.set('looklike', {
+  question: 'What does "translation" look like?',
+  component: WhatIsTranslation
+});
+faq.set('flawed', {
+  question: 'Why did Atlus release such a flawed translation?',
+  component: WhatIsTranslation
+});
+faq.set('complaining', {
+  question: 'Why aren\'t more people complaining?',
+  component: WhatIsTranslation
+});
+faq.set('wrong', {
+  question: 'Can you show me what\'s wrong?',
+  component: WhatIsTranslation
+})
 </script>
 
 <template>
   <div class="w-full min-h-screen bg-black">
-    <div class="sm:w-full lg:max-w-[1100px] mx-auto bg-persona-red overflow-x-hidden">
+    <div class="sm:w-full lg:max-w-[1100px] mx-auto bg-persona-red overflow-hidden">
       <section class="mb-16 h-[600px] bg-[url('./assets/bg.png')] bg-cover bg-center flex flex-col justify-center">
         <div class="w-full h-64 bg-black text-white flex flex-col justify-center gap-y-8 items-center">
           <h1 class="text-4xl font-extrabold tracking-wide text-center rotate-[-8deg]">
@@ -37,7 +61,43 @@ import Carousel from './components/Carousel.vue';
             "Y<span class="rl-rb rotate-[6deg]">a</span>kiso<span class="rl-rb rotate-[-1deg]">b</span>a Pa<span class="rl-rb rotate-[2deg]">n</span>."
           </div>
         </Carousel>
-        <div class="mt-20 bg-black text-white">Cutting to the Chase</div>
+        <div class="p-14 mt-20 bg-black text-white rotate-2 text-lg">
+          <div class="rotate-[-2deg]">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Cuttin<span class="rl-bw rotate-3">g</span> to the C<span class="rl-bw rotate-[-2deg]">h</span>ase</h2>
+            <p class="mb-6">Persona 5 is out in English, and it's arrived with a shower of praise from critics and fans alike. This should come as little surprise to anyone who played the game in Japanese. It's brilliant and innovative, and very fun.</p>
+            <p class="mb-6 font-bold">But, there's a problem: the translation is riddled with errors.</p>
+            <p class="mb-6">That's not to say it's unreadable, or completely without merit. But for a massive RPG from a highly successful franchise, it falls incredibly short of the standard it should be held to. A video game is a professional work, no different from any other form of media. Yet no other form of media would ever get away with the number of errors found in Persona 5's English script.</p>
+            <p class="mb-10 font-bold">This isn't the 1990s, when localization was still young and errors were endemic. Nor is Persona 5 a small game, or an insignificant one.</p>
+            <div class="flex justify-center items-center gap-x-4">
+              <div class="absolute left-8 text-2xl font-extrabold text-persona-red">Toggle theme:</div>
+              <button class="py-2 px-6 font-extrabold bg-persona-red text-black">Vivid</button>
+              <button class="py-2 px-6 font-extrabold">Relaxed</button>
+              <button class="py-2 px-6 font-extrabold">Vanilla</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-14 mt-2 bg-black text-white border-t-4 border-persona-red rotate-[-2deg] text-lg">
+          <div class="rotate-[3deg]">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Ho<span class="rl-bw rotate-[-1deg]">w</span> Bad <span class="rl-bw rotate-[5deg]">i</span>s Bad?</h2>
+            <p class="mb-6">The baseline for any translation is this: readers of the translation should receive the same experience as readers of the original, <span class="italic font-semibold">as if the original creators had written it natively in both languages</span>.</p>
+            <p class="mb-6">Persona 5's English localization does not meet this standard. Readers are receiving an inferior work containing awkward language, mischaracterization, grammatical mistakes, and outright translation errors.</p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[52rem] mx-auto">
+        <div class="my-20 ml-12 flex gap-x-20">
+          <div class="flex flex-col justify-around text-5xl font-extrabold">
+            <div class="rl-rb rotate-2 !p-1 w-min">A</div>
+            <div class="rl-rb rotate-6 !p-1 w-min">S</div>
+            <div class="rl-rb rotate-[-3deg] !p-1 w-min">K</div>
+          </div>
+          <ul class="small-caps text-xl font-black">
+            <li v-for="[key, value] in faq" @click="selected = key" class="relative p-1 cursor-pointer hover:underline">
+              <span :class="'faq-bullet-red' + ((key === selected) ? ' selected' : '')">{{ value.question }}</span>
+            </li>
+          </ul>
+        </div>
+        <component :is="faq.get(selected).component"></component>
       </section>
     </div>
   </div>

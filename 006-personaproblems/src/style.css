@@ -20,8 +20,39 @@ body {
     .rl-rb {
         @apply ransom-letter bg-black text-persona-red;
     }
+
+    .rl-br {
+        @apply ransom-letter text-black bg-persona-red;
+    }
     
     .p-quote {
         @apply text-4xl font-extrabold text-center relative leading-tight;
+    }
+    
+    .p-bullet-red::before {
+        content: "\2022";
+        position: absolute;
+        font-weight: 700;
+        left: 1rem;
+        @apply text-persona-red;
+    }
+    
+    .faq-bullet-red::before {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        display: inline-block;
+        border: 2px solid #000;
+        border-radius: 100%;
+        position: relative;
+        left: -1rem;
+    }
+    
+    .faq-bullet-red.selected::before {
+        background-color: #000;
+    }
+    
+    .small-caps {
+        font-variant: small-caps;
     }
 }
