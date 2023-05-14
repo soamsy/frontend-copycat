@@ -2,6 +2,8 @@
 import { ref, reactive } from 'vue';
 import Carousel from './components/Carousel.vue';
 import WhatIsTranslation from './components/WhatIsTranslation.vue';
+import Problems from './components/Problems.vue';
+import scripts from './scripts.js';
 const selected = ref('different');
 const faq = reactive(new Map());
 faq.set('different', {
@@ -79,8 +81,18 @@ faq.set('wrong', {
         <div class="p-14 mt-2 bg-black text-white border-t-4 border-persona-red rotate-[-2deg] text-lg">
           <div class="rotate-[3deg]">
             <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Ho<span class="rl-bw rotate-[-1deg]">w</span> Bad <span class="rl-bw rotate-[5deg]">i</span>s Bad?</h2>
-            <p class="mb-6">The baseline for any translation is this: readers of the translation should receive the same experience as readers of the original, <span class="italic font-semibold">as if the original creators had written it natively in both languages</span>.</p>
-            <p class="mb-6">Persona 5's English localization does not meet this standard. Readers are receiving an inferior work containing awkward language, mischaracterization, grammatical mistakes, and outright translation errors.</p>
+            <p class="mb-6">
+              The baseline for any translation is this: readers of the
+              translation should receive the same experience as readers of the
+              original, <span class="italic font-semibold">as if the original
+              creators had written it natively in both languages</span>.
+            </p>
+            <p class="mb-6">
+              Persona 5's English localization does not meet this standard.
+              Readers are receiving an inferior work containing awkward
+              language, mischaracterization, grammatical mistakes, and outright
+              translation errors.
+            </p>
           </div>
         </div>
       </section>
@@ -98,6 +110,22 @@ faq.set('wrong', {
           </ul>
         </div>
         <component :is="faq.get(selected).component"></component>
+      </section>
+      <section class="max-w-4xl mx-auto">
+        <Problems :script="scripts.ce1">
+          <template v-slot:title>
+            Comprehension Error I
+          </template>
+          <template v-slot:problem>
+            Translation error.
+          </template>
+          <template v-slot:critique>
+            The detective isn't psychic: he's actually referring to a <i>previous</i>
+            call that he had received, not the one Sae is about to receive. And
+            his irate command to “get it over with” doesn't refer to the phone
+            call, but to the interrogation about to take place. 
+        </template>
+        </Problems>
       </section>
     </div>
   </div>
