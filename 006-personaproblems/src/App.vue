@@ -2,7 +2,7 @@
 import { ref, reactive } from 'vue';
 import Carousel from './components/Carousel.vue';
 import WhatIsTranslation from './components/WhatIsTranslation.vue';
-import Problems from './components/Problems.vue';
+import begin from './components/critiques/begin.vue';
 import ce1 from './components/critiques/ce1.vue';
 import ce2 from './components/critiques/ce2.vue';
 import ce3 from './components/critiques/ce3.vue';
@@ -33,26 +33,27 @@ faq.set('complaining', { question: 'Why aren\'t more people complaining?', compo
 faq.set('wrong',       { question: 'Can you show me what\'s wrong?', component: WhatIsTranslation })
 
 const critiques = reactive([
-  { component: ce1, big: true, rotation: 1, },
-  { component: ce2, big: false, rotation: 1, },
-  { component: ce3, big: false, rotation: 1, },
-  { component: non1, big: false, rotation: -3, },
-  { component: non2, big: false, rotation: -3, },
-  { component: non3, big: false, rotation: -3, },
-  { component: non4, big: false, rotation: -3, },
-  { component: grab1, big: false, rotation: -3, },
-  { component: grab2, big: false, rotation: -3, },
-  { component: grab3, big: false, rotation: -3, },
-  { component: grab4, big: false, rotation: -3, },
-  { component: grab5, big: false, rotation: -3, },
-  { component: loc1, big: false, rotation: -3, },
-  { component: loc2, big: false, rotation: -3, },
-  { component: phrase1, big: false, rotation: -3, },
-  { component: phrase2, big: false, rotation: -3, },
-  { component: stock1, big: false, rotation: -3, },
-  { component: stock2, big: false, rotation: -3, },
-  { component: grammar1, big: false, rotation: -3, },
-  { component: voice1, big: false, rotation: -3, },
+  { component: begin, rotation: 1, },
+  { component: ce1, rotation: 1, },
+  { component: ce2, rotation: 1, },
+  { component: ce3, rotation: 1, },
+  { component: non1, rotation: -3, },
+  { component: non2, rotation: -3, },
+  { component: non3, rotation: -3, },
+  { component: non4, rotation: -3, },
+  { component: grab1, rotation: -3, },
+  { component: grab2, rotation: -3, },
+  { component: grab3, rotation: -3, },
+  { component: grab4, rotation: -3, },
+  { component: grab5, rotation: -3, },
+  { component: loc1, rotation: -3, },
+  { component: loc2, rotation: -3, },
+  { component: phrase1, rotation: -3, },
+  { component: phrase2, rotation: -3, },
+  { component: stock1, rotation: -3, },
+  { component: stock2, rotation: -3, },
+  { component: grammar1, rotation: -3, },
+  { component: voice1, rotation: -3, },
 ]);
 
 const selectedCritique = ref(0);
@@ -146,7 +147,7 @@ const selectedCritique = ref(0);
         <div class="flex justify-between items-center">
             <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
             <div class="flex justify-center items-center">
-              <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-1"><div :class="'critique-bullet' + (c.big ? ' big' : '') + (index == selectedCritique ? ' selected' : '')"></div></button>
+              <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-1"><div :class="'critique-bullet' + (index % 5 == 0 ? ' big' : '') + (index == selectedCritique ? ' selected' : '')"></div></button>
             </div>
             <button @click="next()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] mr-5">›</button>
         </div>

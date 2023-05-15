@@ -20,11 +20,38 @@
                 <li class="p-bullet-red">Leaving content untranslated because it is challenging to convey</li>
                 <li class="p-bullet-red">Changing content to suit the translator's subjective preference</li>
             </ul>
-            <p class="mb-6">Localization is a broader process, and involves adapting content so it's more easily understood in different regions. This generally involves translation, and may involve other adjustments—such as converting between regional measurement systems or exchanging obscure pop culture references for ones appropriate for the target audience.<span class="relative text-xs bottom-2">1</span> However, localization cannot “fix” bad translation.</p>
-            <p class="mb-6">Localization can be a controversial term because of how video game translation and consumer awareness of it have evolved over time. Despite misconceptions to the contrary, <span class="italic font-semibold">good localization will never violate the principles of translation listed above</span>.</p>
-            <p class="mb-6">You can find more information on the topic under the ASK item “What does good translation look like?”</p>
+            <p class="mb-6">
+                Localization is a broader process, and involves adapting
+                content so it's more easily understood in different regions.
+                This generally involves translation, and may involve other
+                adjustments—such as converting between regional measurement
+                systems or exchanging obscure pop culture references for ones
+                appropriate for the target audience.<span class="relative
+                text-xs bottom-2">1</span> However, localization cannot “fix”
+                bad translation.
+            </p>
+            <p class="mb-6">
+                Localization can be a controversial term because of how video
+                game translation and consumer awareness of it have evolved over
+                time. Despite misconceptions to the contrary, <span
+                class="italic font-semibold">good localization will never
+            violate the principles of translation listed above</span>.
+            </p>
+            <p class="mb-6">
+                You can find more information on the topic under the ASK item
+                “What does good translation look like?”
+            </p>
             <hr class="mb-3"/>
-            <p class="text-sm"><span class="absolute left-[-1rem]">1:</span>The trick is to ensure that the reference is equally obscure and has the same effect both before and after, relative to the given audience. A common British reference might be literally impossible to understand for a Japanese reader, so a localizer will attempt to find a common ground that clicks with the target audience without culturally undermining the text. Localization is <span class="italic">hard</span>.</p>
+            <p class="text-sm">
+                <span class="absolute left-[-1rem]">1:</span>
+                The trick is to ensure that the reference is equally obscure
+                and has the same effect both before and after, relative to the
+                given audience. A common British reference might be literally
+                impossible to understand for a Japanese reader, so a localizer
+                will attempt to find a common ground that clicks with the
+                target audience without culturally undermining the text.
+                Localization is <span class="italic">hard</span>.
+            </p>
         </div>
     </div>
 </template>
