@@ -4,43 +4,58 @@ import Carousel from './components/Carousel.vue';
 import WhatIsTranslation from './components/WhatIsTranslation.vue';
 import Problems from './components/Problems.vue';
 import ce1 from './components/critiques/ce1.vue';
+import ce2 from './components/critiques/ce2.vue';
+import ce3 from './components/critiques/ce3.vue';
 import non1 from './components/critiques/non1.vue';
+import non2 from './components/critiques/non2.vue';
+import non3 from './components/critiques/non3.vue';
+import non4 from './components/critiques/non4.vue';
+import grab1 from './components/critiques/grab1.vue';
+import grab2 from './components/critiques/grab2.vue';
+import grab3 from './components/critiques/grab3.vue';
+import grab4 from './components/critiques/grab4.vue';
+import grab5 from './components/critiques/grab5.vue';
+import loc1 from './components/critiques/loc1.vue';
+import loc2 from './components/critiques/loc2.vue';
+import phrase1 from './components/critiques/phrase1.vue';
+import phrase2 from './components/critiques/phrase2.vue';
+import stock1 from './components/critiques/stock1.vue';
+import stock2 from './components/critiques/stock2.vue';
+import grammar1 from './components/critiques/grammar1.vue';
+import voice1 from './components/critiques/voice1.vue';
+
 const selected = ref('different');
 const faq = reactive(new Map());
-faq.set('different', {
-  question: 'How does "translation" differ from "localization"?',
-  component: WhatIsTranslation
-});
-faq.set('looklike', {
-  question: 'What does "translation" look like?',
-  component: WhatIsTranslation
-});
-faq.set('flawed', {
-  question: 'Why did Atlus release such a flawed translation?',
-  component: WhatIsTranslation
-});
-faq.set('complaining', {
-  question: 'Why aren\'t more people complaining?',
-  component: WhatIsTranslation
-});
-faq.set('wrong', {
-  question: 'Can you show me what\'s wrong?',
-  component: WhatIsTranslation
-})
+faq.set('different',   { question: 'How does "translation" differ from "localization"?', component: WhatIsTranslation });
+faq.set('looklike',    { question: 'What does "translation" look like?', component: WhatIsTranslation });
+faq.set('flawed',      { question: 'Why did Atlus release such a flawed translation?', component: WhatIsTranslation });
+faq.set('complaining', { question: 'Why aren\'t more people complaining?', component: WhatIsTranslation });
+faq.set('wrong',       { question: 'Can you show me what\'s wrong?', component: WhatIsTranslation })
 
-const critiques = reactive(new Map());
-critiques.set('ce1', {
-  component: ce1,
-  big: true,
-  rotation: 1,
-});
-critiques.set('non1', {
-  component: non1,
-  big: false,
-  rotation: -3,
-});
+const critiques = reactive([
+  { component: ce1, big: true, rotation: 1, },
+  { component: ce2, big: false, rotation: 1, },
+  { component: ce3, big: false, rotation: 1, },
+  { component: non1, big: false, rotation: -3, },
+  { component: non2, big: false, rotation: -3, },
+  { component: non3, big: false, rotation: -3, },
+  { component: non4, big: false, rotation: -3, },
+  { component: grab1, big: false, rotation: -3, },
+  { component: grab2, big: false, rotation: -3, },
+  { component: grab3, big: false, rotation: -3, },
+  { component: grab4, big: false, rotation: -3, },
+  { component: grab5, big: false, rotation: -3, },
+  { component: loc1, big: false, rotation: -3, },
+  { component: loc2, big: false, rotation: -3, },
+  { component: phrase1, big: false, rotation: -3, },
+  { component: phrase2, big: false, rotation: -3, },
+  { component: stock1, big: false, rotation: -3, },
+  { component: stock2, big: false, rotation: -3, },
+  { component: grammar1, big: false, rotation: -3, },
+  { component: voice1, big: false, rotation: -3, },
+]);
 
-const selectedCritique = ref('ce1');
+const selectedCritique = ref(0);
 
 </script>
 
@@ -131,11 +146,11 @@ const selectedCritique = ref('ce1');
         <div class="flex justify-between items-center">
             <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
             <div class="flex justify-center items-center">
-              <button v-for="[key, c] in critiques" @click="selectedCritique = key" class="group p-1"><div :class="'critique-bullet' + (c.big ? ' big' : '')"></div></button>
+              <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-1"><div :class="'critique-bullet' + (c.big ? ' big' : '') + (index == selectedCritique ? ' selected' : '')"></div></button>
             </div>
             <button @click="next()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] mr-5">›</button>
         </div>
-        <component :is="critiques.get(selectedCritique).component"></component>
+        <component :is="critiques[selectedCritique].component"></component>
       </section>
     </div>
   </div>

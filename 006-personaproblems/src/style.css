@@ -67,4 +67,8 @@ body {
     .critique-bullet.big {
         @apply w-3 h-3;
     }
+    
+    .critique-bullet.selected {
+        @apply opacity-100;
+    }
 }
