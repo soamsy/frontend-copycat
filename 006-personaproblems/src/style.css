@@ -65,7 +65,7 @@ body {
     }
 
     .critique-bullet.big {
-        @apply w-3 h-3;
+        @apply w-4 h-4;
     }
     
     .critique-bullet.selected {

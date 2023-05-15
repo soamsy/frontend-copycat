@@ -97,7 +97,7 @@ faq.set('wrong',       { question: 'Can you show me what\'s wrong?', component: 
         <component :is="faq.get(selected).component"></component>
       </section>
       <section class="max-w-4xl mx-auto">
-        <AllCritiques></AllCritiques>
+          <AllCritiques></AllCritiques>
       </section>
     </div>
   </div>

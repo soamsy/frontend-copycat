@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, useSlots, onMounted, watch } from 'vue';
+import { mod } from '../utils.js';
 
 const slots = useSlots();
 const currentIndex = ref(0);
@@ -45,10 +46,6 @@ watch(hidden, (newVal) => {
         }, 10);
     }
 });
-
-const mod = (n, m) => {
-    return ((n % m) + m) % m;
-}
 
 const prev = () => {
     slideTo(mod(nextIndex.value - 1, count.value));
