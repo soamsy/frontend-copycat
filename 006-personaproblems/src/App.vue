@@ -3,7 +3,8 @@ import { ref, reactive } from 'vue';
 import Carousel from './components/Carousel.vue';
 import WhatIsTranslation from './components/WhatIsTranslation.vue';
 import Problems from './components/Problems.vue';
-import scripts from './scripts.js';
+import ce1 from './components/critiques/ce1.vue';
+import non1 from './components/critiques/non1.vue';
 const selected = ref('different');
 const faq = reactive(new Map());
 faq.set('different', {
@@ -112,20 +113,8 @@ faq.set('wrong', {
         <component :is="faq.get(selected).component"></component>
       </section>
       <section class="max-w-4xl mx-auto">
-        <Problems :script="scripts.ce1">
-          <template v-slot:title>
-            Comprehension Error I
-          </template>
-          <template v-slot:problem>
-            Translation error.
-          </template>
-          <template v-slot:critique>
-            The detective isn't psychic: he's actually referring to a <i>previous</i>
-            call that he had received, not the one Sae is about to receive. And
-            his irate command to “get it over with” doesn't refer to the phone
-            call, but to the interrogation about to take place. 
-        </template>
-        </Problems>
+        <ce1></ce1>
+        <non1></non1>
       </section>
     </div>
   </div>
