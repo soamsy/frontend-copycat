@@ -27,6 +27,21 @@ faq.set('wrong', {
   question: 'Can you show me what\'s wrong?',
   component: WhatIsTranslation
 })
+
+const critiques = reactive(new Map());
+critiques.set('ce1', {
+  component: ce1,
+  big: true,
+  rotation: 1,
+});
+critiques.set('non1', {
+  component: non1,
+  big: false,
+  rotation: -3,
+});
+
+const selectedCritique = ref('ce1');
+
 </script>
 
 <template>
@@ -113,8 +128,14 @@ faq.set('wrong', {
         <component :is="faq.get(selected).component"></component>
       </section>
       <section class="max-w-4xl mx-auto">
-        <ce1></ce1>
-        <non1></non1>
+        <div class="flex justify-between items-center">
+            <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
+            <div class="flex justify-center items-center">
+              <button v-for="[key, c] in critiques" @click="selectedCritique = key" class="group p-1"><div :class="'critique-bullet' + (c.big ? ' big' : '')"></div></button>
+            </div>
+            <button @click="next()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] mr-5">›</button>
+        </div>
+        <component :is="critiques.get(selectedCritique).component"></component>
       </section>
     </div>
   </div>
