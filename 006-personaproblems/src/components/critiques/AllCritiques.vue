@@ -82,7 +82,7 @@ const rotation = () => {
     <div class="mx-8 mt-28 mb-16 flex justify-between items-center text-backdrop select-none">
         <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
         <div class="flex justify-center items-center">
-            <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-1 relative">
+            <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-[2px] lg:p-1 relative">
                 <div v-if="selectedCritique === index" class="absolute w-4 h-4 top-0 left-0 right-0 mx-auto origin-bottom flex justify-center rotate-1" :style="rotation(index)">
                     <div class="absolute top-[-1.2rem] flex items-center justify-center">
                         <div class="absolute bottom-0 h-12 w-6 border-b-2 rounded-b-sm border-backdrop-fg font-black text-backdrop-bg bg-backdrop-fg text-xs flex justify-center items-center">
