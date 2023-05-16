@@ -5,6 +5,7 @@ import WrappingUp from './components/WrappingUp.vue';
 import Credits from './components/Credits.vue';
 import Faq from './components/faq/Faq.vue';
 import AllCritiques from './components/critiques/AllCritiques.vue';
+import Defense from './components/defenses/Defenses.vue';
 </script>
 
 <template>
@@ -81,10 +82,13 @@ import AllCritiques from './components/critiques/AllCritiques.vue';
       <section class="max-w-4xl mx-auto">
           <AllCritiques></AllCritiques>
       </section>
-      <section class="max-w-4xl mx-auto my-24">
+      <section class="max-w-4xl mx-auto">
+          <Defense></Defense>
+      </section>
+      <section class="max-w-4xl mx-auto mb-24">
         <WrappingUp></WrappingUp>
       </section>
-      <section class="max-w-4xl mx-auto my-24">
+      <section class="max-w-4xl mx-auto mb-24">
         <Credits></Credits>
       </section>
     </div>
