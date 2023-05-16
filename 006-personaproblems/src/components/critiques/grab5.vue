@@ -27,8 +27,8 @@
         </p>
         <p class="mb-4">
             For the fourth line, there was almost certainly a way to render
-            this without invoking Fate/stay night levels of memetic paradox or
-            redundancy.
+            this without invoking Fate/stay night levels of <a class="link" href="#">memetic paradox or
+            redundancy</a>.
         </p>
         <p class="">
             And I guess the fifth line feels obliged to leave an exception for

@@ -22,7 +22,7 @@
             And then consider that professional voice actors had to say these
             lines aloud during recording. You can listen to Ann's voice actress
             attempt to sell the first line in her character trailer, but the
-            handicap of poor writing really hurts the performance.
+            handicap of poor writing really <a class="link" href="#">hurts the performance</a>.
         </p>
     </template>
     </Problems>

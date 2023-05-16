@@ -87,4 +87,9 @@ body {
     .ref {
         @apply relative text-xs bottom-2;
     }
+    
+    .link {
+        text-decoration: none;
+        @apply font-black pb-[1px] border-b-2 border-link-border text-link;
+    }
 }

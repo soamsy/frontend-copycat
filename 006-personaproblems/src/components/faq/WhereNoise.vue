@@ -39,7 +39,7 @@
             <ul class="mb-6 ml-5 px-6">
                 <li class="p-bullet-red">Literal, word-by-word translations</li>
                 <li class="p-bullet-red">Stilted writing that mimics Japanese sentence structure</li>
-                <li class="p-bullet-red">Stock translations of common phrases</li>
+                <li class="p-bullet-red"><a class="link" href="#">Stock translations of common phrases</a></li>
                 <li class="p-bullet-red">Leaving Japanese words untranslated even when they have English equivalents</li>
                 <li class="p-bullet-red">Translation errors</li>
             </ul>
@@ -58,8 +58,8 @@
             </p>
             <p class="mb-6">
                 But while they <em>sounded</em> good, they were also often censored,
-                altered to be more “friendly” in the West, or even completely
-                rewritten.
+                altered to be more “friendly” in the West, or even <a class="link" href="#">completely
+                rewritten</a>.
             </p>
             <p class="mb-6">
                 A new belief was born within a significant segment of the fan
@@ -108,12 +108,12 @@
             <p class="mb-6">
                 The result of the above factors (and more) is that complaints
                 about awkward, literal translation are often countered with
-                accusations of wanting to remove all references to Japanese
-                culture.
+                accusations of wanting to remove <a class="link" href="#">all references to Japanese
+                culture</a>.
             </p>
             <p class="mb-6">
                 In Persona 5's case, there's one more factor: people are pretty
-                upset by Atlus's streaming restrictions. Understandably, this
+                upset by Atlus's <a class="link" href="#">streaming restrictions</a>. Understandably, this
                 has drawn attention away from the poor quality of the
                 translation.
             </p>

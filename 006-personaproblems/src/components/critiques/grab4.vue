@@ -25,8 +25,8 @@
         </p>
         <p class="mb-4">
             The third line is awkward—people don't talk like this. Even just
-            the two-word combination “reported arbitrarily” shows up fewer than
-            1,000 times in the 50-100 billion web pages Google has indexed—and
+            the two-word combination “reported arbitrarily” shows up <a class="link" href="#">fewer than
+            1,000 times</a> in the 50-100 billion web pages Google has indexed—and
             most results are from medical or scientific texts, not casual
             conversation. One first-page result is actually from Persona 5
             itself.

@@ -28,9 +28,10 @@
         <p class="mb-4">
             Fifth line: I don't know which capable woman had her aura stolen so that Makoto's sister could overflow with it, but I guarantee that she'd be happier if this line had been better worded.
         </p>
-        <hr/>
-        <p class="mb-4">
-            Trifle: “a dessert typically consisting of plain or sponge cake often soaked with wine or spirits (such as brandy or rum) and topped with layers of preserves, custard, and cream.”
+        <hr class="mb-3"/>
+        <p class="relative text-sm">
+            <span class="absolute left-[-1rem]">1:</span>
+            <a class="link" href="#">Trifle</a>: “a dessert typically consisting of plain or sponge cake often soaked with wine or spirits (such as brandy or rum) and topped with layers of preserves, custard, and cream.”
         </p>
     </template>
     </Problems>

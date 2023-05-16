@@ -22,6 +22,8 @@
               "critique-bg": "#222",
               "alert": "#F40000",
               "dazzle": "#ff6df1",
+              "link": "#02fdef",
+              "link-border": "rgba(2,253,239,.4)",
             }
           }
         },
@@ -37,6 +39,8 @@
               "critique-bg": "#222",
               "alert": "#F40000",
               "dazzle": "#ff6df1",
+              "link": "#02fdef",
+              "link-border": "rgba(2,253,239,.4)",
             }
           }
         },
@@ -52,6 +56,8 @@
               "critique-bg": "#CCC",
               "alert": "#F40000",
               "dazzle": "#000",
+              "link": "#006963",
+              "link-border": "rgba(0,105,99,.4)",
             }
           }
         },

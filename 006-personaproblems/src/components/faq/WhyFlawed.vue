@@ -6,7 +6,7 @@
                 rotate-[-2deg]">s</span> hap<span class="rl-highlight
                 rotate-[3deg]">p</span>en?
         </h2>
-        <div class="m-16 mt-12lg:rotate-[-1deg] text-lg leading-snug relative">
+        <div class="m-16 mt-12 lg:rotate-[-1deg] text-lg leading-snug relative">
             <p class="mb-6">
                 Unfortunately, there's no way to know for sure without Atlus
                 telling us themselves or one of the translation staff coming
@@ -18,7 +18,7 @@
                 The translation team was massive.
             </p>
             <p class="mb-6">
-                Yu Namba of Atlus has stated that Persona 5 “boasted the most
+                Yu Namba of Atlus <a class="link" href="#">has stated</a> that Persona 5 “boasted the most
                 number of translators and editors on a team”. <span
                 class="ref">1</span> That sounds
                 impressive, but it rings instant alarm bells for anyone in the
@@ -26,7 +26,7 @@
                 “written by the greatest number of authors.”
             </p>
             <p class="mb-6">
-                And Namba's claim checks out: Persona 5's credits list a
+                And Namba's claim checks out: <a class="link" href="#">Persona 5's</a> credits list a
                 whopping six translators and <em>eight</em> editors as having worked on
                 the project's localization.
             </p>
@@ -71,8 +71,8 @@
             </p>
             <p class="mb-6">
                 Normally, a script will be adjusted during recording to better
-                reflect character voice and fix lingering mistakes. Not so with
-                Persona 5.
+                reflect character voice and fix lingering mistakes. <a class="link" href="#">Not so with
+                Persona 5</a>.
             </p>
             <p class="mb-4 flex justify-center items-center gap-x-4 text-sm text-content-highlight"><span>*</span><span>*</span><span>*</span></p>
             <p class="mb-6">

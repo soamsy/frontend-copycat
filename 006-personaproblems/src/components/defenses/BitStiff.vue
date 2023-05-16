@@ -36,7 +36,7 @@
             </p>
             <p class="mb-6">
                 If you're mathematically inclined, you might recognize this as
-                a form of the pigeonhole principle. If you're not
+                a form of the <a class="link" href="#">pigeonhole principle</a>. If you're not
                 mathematically inclined, don't worry: it's barely math. The
                 pigeonhole principle is just a fancy way of saying that if you
                 have more items than buckets to put them in, some of the items
@@ -44,7 +44,7 @@
                 text-xs bottom-2">1</span>
             </p>
             <p class="mb-6">
-                Coming across concepts that don't translate well into a
+                Coming across concepts that don't translate ll into a
                 particular language is common for translators. When this
                 happens, they have to consider context and choose the option
                 that best matches the original creator's intent.
