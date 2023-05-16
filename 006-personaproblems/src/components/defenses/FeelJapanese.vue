@@ -6,7 +6,7 @@
                 “I like that I can feel the Japanese behind the translation.”
             </p>
             <p class="mb-6">
-                It's definitely great to get to experience the cultural aspect of a piece of foreign writing. However, that foreign nature should be expressed by the text's content, not by the text's awkwardness.
+                It's definitely great to get to experience the cultural aspect of a piece of foreign writing. However, that foreign nature should be expressed by the text's content, <em>not</em> by the text's awkwardness.
             </p>
             <p class="mb-6">
                 This goes back to creator intent. If the original creator were perfectly fluent in English, would they have made their writing intentionally awkward just so readers could feel how “foreign” it is?

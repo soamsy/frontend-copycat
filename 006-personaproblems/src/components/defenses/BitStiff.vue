@@ -7,7 +7,7 @@
             </p>
             <p class="mb-6">
                 Unfortunately, while it's possible for a translation to be
-                stiff but understandable, stiff but accurate translations are
+                stiff but understandable, stiff but <em>accurate</em> translations are
                 pretty much a myth.
             </p>
             <p class="mb-6">
@@ -27,12 +27,12 @@
             </p>
             <p class="mb-6">
                 It's easy to prove that language doesn't work like this.
-                Consider the Japanese ao, which is a color that encompasses
+                Consider the Japanese <em class="dazzle">ao</em>, which is a color that encompasses
                 both green and blue. English has separate words for both
                 colors, meaning there's no easy 1:1 conversion between Japanese
                 and English. The translator will always have to take context
-                into account to decide whether to translate ao as blue or
-                green.
+                into account to decide whether to translate <em class="dazzle">ao</em> as <em class="dazzle">blue</em> or
+                <em class="dazzle">green</em>.
             </p>
             <p class="mb-6">
                 If you're mathematically inclined, you might recognize this as

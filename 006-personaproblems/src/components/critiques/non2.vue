@@ -19,7 +19,7 @@
         </p>
         <p class="mb-4">
             The human brain is excellent at pulling meaning out of nonsense,
-            but this isn't meant to be a puzzle—it's supposed to be enjoyable
+            but this <strong><em>isn't meant to be a puzzle</em></strong>—it's supposed to be enjoyable
             dialogue in one of the best RPGs of the decade.
         </p>
         <p class="mb-4">
@@ -29,13 +29,13 @@
             Second line: First off, this line starts with “still,” which
             indicates an incoming contradiction to what was said before... but
             instead it doubles down by reinforcing the previous statement. The
-            use of re-enroll is misleading—he isn't enrolling at the same
+            use of <em class="dazzle">re-enroll</em> is misleading—he isn't enrolling at the same
             institution—and the reference to “a different one” never states
             what the “one” even is (a school).
         </p>
         <p class="mb-4">
             Third line: “be sympathetic with” is a terrible way to say
-            sympathize. But even had that not been an issue, this line just
+            <em class="dazzle">sympathize</em>. But even had that not been an issue, this line just
             doesn't flow from the previous one.
         </p>
         <p class="">

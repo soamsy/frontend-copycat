@@ -27,7 +27,7 @@
                 present in their creation, such as typos and inconsistencies.
             </p>
             <p class="mb-6">
-                By extension, adding errors is a cardinal sin and a fundamental
+                By extension, <em>adding</em> errors is a cardinal sin and a fundamental
                 failure on the part of the translation team.
             </p>
             <p class="mb-6">
@@ -38,12 +38,12 @@
                 dwelling there.
             </p>
             <p class="mb-6 font-bold">
-                Above all, translation is never a word-by-word conversion.
+                Above all, translation is <em>never a word-by-word conversion</em>.
             </p>
             <p class="mb-6">
                 This is one of the greatest translation myths, and one of the
                 most harmful. Translators do not convert words from one
-                language to another: they convert ideas. This is why it's so
+                language to another: they convert <em>ideas</em>. This is why it's so
                 important for them to understand creator intent. A word-by-word
                 translation will always be a stiff, inferior product that
                 betrays the original work and its readers.

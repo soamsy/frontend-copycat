@@ -13,8 +13,7 @@
     </template>
     <template v-slot:critique>
         This was translated exactly backwards: Character B is actually saying
-        that the person addressed is not a part-timer.
+        that the person addressed is <em>not</em> a part-timer.
     </template>
     </Problems>
 </template>
-

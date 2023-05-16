@@ -15,7 +15,7 @@
         <p class="mb-4">
         Readers tend to be pretty smart, so most will figure out what's
         going on here. But this is still pretty much nonsense: what on
-        earth does it mean to introduce yourself about something?
+        earth does it mean to introduce yourself <em>about</em> something?
         </p>
         <p>
         The principal's lines are awful as well—he starts off almost

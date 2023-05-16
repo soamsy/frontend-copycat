@@ -11,13 +11,13 @@
             of the character of the work, not the character of the people
             behind it. Video game localization requires significant effort from
             many people, and it's impossible to know exactly which were
-            responsible for the script's quality. <span class="relative text-xs bottom-2">1</span>
+            responsible for the script's quality. <span class="ref">1</span>
         </p>
         <p class="mb-6">
             As such, I want it to be completely clear that <strong>I do not intend my
             statements to be a personal attack on the Persona 5 localization
             team</strong>, but merely a critique of their final product. I also want to
-            acknowledge that Persona 5 does contain some inspired lines, and
+            acknowledge that Persona 5 <em>does</em> contain some inspired lines, and
             those deserve credit. I very much wish that they had been the norm,
             rather than the stand-out exception.
         </p>

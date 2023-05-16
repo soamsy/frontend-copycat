@@ -31,17 +31,17 @@
             conversation. One first-page result is actually from Persona 5
             itself.
         </p>
-        <p class="">
+        <p class="relative">
             The fourth line takes the cake by barely resembling the original
             Japanese:
-            <ul>
-                <li>
+            <ul class="px-6 py-4 ml-5">
+                <li class="p-bullet-red">
                     To start with, this line is spoken by a newscaster in the
                     background, and is supposed to be conveyed in an even,
                     professional manner. The exclamatory, panicked tone is a
                     fabrication not present in the original.
                 </li>
-                <li>
+                <li class="p-bullet-red">
                     It's also written in very poor English. A more natural
                     phrasing (that doesn't fix the fundamental interpretation
                     issues) might be: “A city bus was driven against the flow

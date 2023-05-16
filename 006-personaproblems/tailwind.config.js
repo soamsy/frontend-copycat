@@ -21,6 +21,7 @@
               "content-highlight": "#F40000",
               "critique-bg": "#222",
               "alert": "#F40000",
+              "dazzle": "#ff6df1",
             }
           }
         },
@@ -35,6 +36,7 @@
               "content-highlight": "#EEE",
               "critique-bg": "#222",
               "alert": "#F40000",
+              "dazzle": "#ff6df1",
             }
           }
         },
@@ -49,6 +51,7 @@
               "content-highlight": "#000",
               "critique-bg": "#CCC",
               "alert": "#F40000",
+              "dazzle": "#000",
             }
           }
         },

@@ -13,7 +13,8 @@
     </template>
     <template v-slot:critique>
         <p class="mb-4">
-            First line: Unless the speaker literally means matters of dessert, they want trifling, not trifle.1 Additionally, this line uses the best-avoided translation-ism “What [noun]!”
+            First line: Unless the speaker literally means matters of dessert, they want <em class="dazzle">trifling</em>, not <em class="dazzle">trifle</em>.<span
+            class="ref">1</span> Additionally, this line uses the best-avoided translation-ism “What [noun]!”
         </p>
         <p class="mb-4">
             Second line: This is an unclear grammatical mess. What's happening with the tenses?

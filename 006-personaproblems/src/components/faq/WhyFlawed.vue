@@ -20,20 +20,20 @@
             <p class="mb-6">
                 Yu Namba of Atlus has stated that Persona 5 “boasted the most
                 number of translators and editors on a team”. <span
-                class="relative text-xs bottom-2">1</span> That sounds
+                class="ref">1</span> That sounds
                 impressive, but it rings instant alarm bells for anyone in the
                 localization industry: it's like marketing your hit novel as being
                 “written by the greatest number of authors.”
             </p>
             <p class="mb-6">
                 And Namba's claim checks out: Persona 5's credits list a
-                whopping six translators and eight editors as having worked on
+                whopping six translators and <em>eight</em> editors as having worked on
                 the project's localization.
             </p>
             <p class="mb-6">
                 Those eight editors are especially alarming: their job is to
                 unify the translation, and that's hard enough under normal
-                circumstances. But with more editors than translators, they're
+                circumstances. But with <em>more editors than translators</em>, they're
                 actually liable to worsen the stylistic inconsistencies.
             </p>
             <p class="mb-6 font-bold relative">
@@ -79,7 +79,7 @@
                 Now, it's difficult to say exactly what happened. Perhaps there were unreasonable time constraints. Perhaps the localization team was underqualified. Perhaps Atlus had internal issues between its American and Japanese branches—it's not unheard of for international teams to cooperate poorly, and that often hurts localization efforts. Perhaps it was all of these.
             </p>
             <p class="mb-6">
-                However, there's one thing we know for sure: this was 100% avoidable, and would have been avoided had the parties in charge cared enough. The developer always has full control over the work.
+                However, there's one thing we know for sure: this was 100% avoidable, and <em>would</em> have been avoided had the parties in charge cared enough. The developer always has full control over the work.
             </p>
             <p class="mb-6">
                 In short, whoever was responsible simply thought they could get away with it.

@@ -12,8 +12,8 @@
         Translation error.
     </template>
     <template v-slot:critique>
-        The detective isn't psychic: he's actually referring to a <i>previous</i>
-        call that he had received, not the one Sae is about to receive. And
+        The detective isn't psychic: he's actually referring to a <em>previous</em>
+        call that <em>he</em> had received, not the one Sae is about to receive. And
         his irate command to “get it over with” doesn't refer to the phone
         call, but to the interrogation about to take place. 
     </template>

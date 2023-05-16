@@ -6,7 +6,7 @@
         </h2>
         <div class="m-16 mt-12 lg:rotate-[1deg] text-lg leading-snug relative">
             <p class="mb-6">
-                There <i>have</i> been complaints, especially by industry
+                There <em>have</em> been complaints, especially by industry
                 professionals. However, you'd be hard pressed to find a major
                 review site that actually makes note of the errors in Persona
                 5. And indeed, some people have said that the translation is
@@ -29,7 +29,7 @@
                 Japanese media was due to the dedicated efforts of fan
                 translators. The modern economic viability of Japanese media in
                 the West is largely rooted in their efforts to bring Japanese
-                content into other languages. <span class="relative text-xs bottom-2">1</span>
+                content into other languages. <span class="ref">1</span>
             </p>
             <p class="mb-6">
                 Fan translators rarely have professional experience or an
@@ -57,7 +57,7 @@
                 The official translations sometimes... sounded good.
             </p>
             <p class="mb-6">
-                But while they sounded good, they were also often censored,
+                But while they <em>sounded</em> good, they were also often censored,
                 altered to be more “friendly” in the West, or even completely
                 rewritten.
             </p>
@@ -67,8 +67,8 @@
                 fan translations were guaranteed to be faithful to the original
                 creation—that they were often stilted and contained
                 untranslated content was proof of this authenticity. And
-                importantly: it was proof that could be identified without
-                knowing Japanese.
+                importantly: <em>it was proof that could be identified without
+                knowing Japanese</em>.
             </p>
             <p class="mb-6">
                 All it took was a glance and anyone could tell.
@@ -122,7 +122,7 @@
                 <span class="absolute left-[-1rem]">1:</span>
                 And it should not be underestimated just how much work this
                 was, especially for video games. The translators have to get
-                the translation into the game somehow, and Japanese programming
+                the translation <em>into</em> the game somehow, and Japanese programming
                 practices are famously infuriating to deal with.
             </p>
             <p class="text-sm">

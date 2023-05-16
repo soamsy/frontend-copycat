@@ -13,10 +13,10 @@
     </template>
     <template v-slot:critique>
         <p class="mb-4">
-            The noun form of scum is almost never used as if it were countable: the plural of scum is scum, not scums. (He is scum; they are scum.) Glaring errors such as this knock the reader right out of their immersion, which makes them especially important to fix before release.
+            The noun form of <em class="dazzle">scum</em> is almost never used as if it were countable: the plural of <em class="dazzle">scum</em> is <em class="dazzle">scum</em>, not <em class="dazzle">scums</em>. (He is scum; they are scum.) Glaring errors such as this knock the reader right out of their immersion, which makes them especially important to fix before release.
         </p>
         <p class="mb-4">
-            The second line contains the same type of mistake as the first: luggage is uncountable, and thus cannot be referred to as them. Doing so is akin to saying “Sunshine are warm” instead of “Sunshine is warm.”
+            The second line contains the same type of mistake as the first: <em class="dazzle">luggage</em> is uncountable, and thus cannot be referred to as <em class="dazzle">them</em>. Doing so is akin to saying “Sunshine are warm” instead of “Sunshine is warm.”
         </p>
         <p class="mb-4">
             In the third line, “the option” should be “an option.”

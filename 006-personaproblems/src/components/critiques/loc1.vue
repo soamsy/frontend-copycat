@@ -13,23 +13,27 @@
     </template>
     <template v-slot:critique>
         <p class="mb-4">
-            The Japanese word for bread is pan, which was borrowed from the
-            Portugese pão (itself derived from the Latin pānis, similar to the
-            French pain). That is to say... there's absolutely no reason to use
-            “yakisoba pan” instead of “yakisoba bread,” especially if the
-            translation also uses “fried bread” and “jam bread,” both of which
-            contain pan in Japanese.1
+            The Japanese word for <em class="dazzle">bread</em> is <em
+            class="dazzle">pan</em>, which was borrowed from the Portugese <em
+            class="dazzle">pão</em> (itself derived from the Latin <em
+            class="dazzle">pānis</em>, similar to the French <em
+            class="dazzle">pain</em>). That is to say... there's absolutely no
+            reason to use “yakisoba pan” instead of “yakisoba bread,” especially if the
+            translation also uses “fried bread” and “jam bread,” both of which contain
+            <em class="dazzle">pan</em> in Japanese. <span class="ref">1</span>
         </p>
         <p class="mb-4">
-            For readers with no knowledge of Japanese, the juxtaposition of pan
-            and bread—as if they were different things—is likely to suggest
-            that yakisoba pan is actually a sheet of metal used for baking
-            something called yakisoba.
+            For readers with no knowledge of Japanese, the juxtaposition of <em
+            class="dazzle">pan</em> and <em class="dazzle">bread</em>—as if
+            they were different things—is likely to suggest that yakisoba pan is
+            actually a sheet of metal used for baking something called yakisoba.
         </p>
-        <hr/>
-        <p class="">
-            Consider also that Gyūdon was translated as beef bowl, even to the
-            point of awkwardness (“beef bowl shop”).
+        <hr class="mb-3"/>
+        <p class="text-sm relative">
+            <span class="absolute left-[-1rem]">1:</span>
+            Consider also that <em class="dazzle">Gyūdon</em> was translated as
+            <em class="dazzle">beef bowl</em>, even to the point of awkwardness
+            (“beef bowl shop”).
         </p>
     </template>
     </Problems>

@@ -16,9 +16,9 @@
             Generally speaking, readers require a translation because they
             don't understand the original language. How, then, are they
             supposed to make sense of the above? You need significant Japanese
-            language skills to know that the Japanese word for dreadnought is a
-            loanword from English and is written as ドレッドノート, which
-            romanizes to doreddonōto... which is where the “do” comes from.
+            language skills to know that the Japanese word for <em class="dazzle">dreadnought</em> is a
+            loanword from English and is written as <em class="dazzle">ドレッドノート</em>, which
+            romanizes to <em class="dazzle">doreddonōto</em>... which is where the “do” comes from.
         </p>
         <p class="mb-4">
             Readers won't understand this, and that means the localization has

@@ -17,8 +17,8 @@
         </p>
         <p class="">
             Every single one of these lines could have been rewritten to not
-            only avoid the stock phrase, but better convey the creator's
-            intent. Stock phrases mask character voice by making everyone sound
+            only avoid the stock phrase, but <em>better convey the creator's
+            intent</em>. Stock phrases mask character voice by making everyone sound
             homogeneous and mechanical.
         </p>
     </template>

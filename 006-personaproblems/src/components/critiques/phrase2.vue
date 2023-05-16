@@ -14,7 +14,7 @@
     <template v-slot:critique>
         <p class="">
             For whatever reason, this translation has a fixation on the word
-            problematic. Some instances in the game are fine, but many (such as
+            <em class="dazzle">problematic</em>. Some instances in the game are fine, but many (such as
             those above) only make the line sound unnatural.
         </p>
     </template>

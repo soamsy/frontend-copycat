@@ -15,8 +15,8 @@
             <p class="mb-6">
                 This is a pretty common view! And it seems to make a lot of
                 sense. However, there's a problem with it, and it stems from
-                the following commonly held belief: that translation is about
-                words.
+                the following commonly held belief: that <em>translation is about
+                words</em>.
             </p>
             <p class="mb-6">
                 Translation is really about ideas.

@@ -19,11 +19,11 @@ const next = inject('next');
 
 </script>
 <template>
-    <div class="p-14 bg-content-bg text-content-fg">
+    <div class="p-14 bg-content-bg text-content-fg text-lg leading-snug">
         <h2 class="mb-10 text-3xl font-extrabold text-content-highlight">
             <slot name="title"></slot>
         </h2>
-        <div class="mx-10 mb-10 flex flex-col gap-y-4 text-lg">
+        <div class="mx-10 mb-10 flex flex-col gap-y-4">
             <div v-for="line in props.script" class="p-4 bg-critique-bg">
                 <div v-if="line.character" class="font-extrabold">{{ line.character }}:</div>
                 <div v-if="lang === 'EN' && line.text">{{ line.text }}</div>

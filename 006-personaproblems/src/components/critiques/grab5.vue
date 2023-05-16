@@ -20,7 +20,7 @@
             ...”
         </p>
         <p class="mb-4">
-            The third line is a good example of how people don't speak. It
+            The third line is a good example of how people <em>don't</em> speak. It
             isn't even difficult to fix: “I hope it doesn't delay the
             trains...” is one simple option; “I hope the trains run on time...”
             is another.

@@ -33,7 +33,7 @@
             </ul>
         </p>
         <p class="mb-4">
-            Yep, all of them are by the same character, except for the second line—and yet character voice is so inconsistent that the third line feels much closer to the second than to the first or fourth, even though the second is by an entirely different character. That's a huge problem.
+            Yep, all of them are by the same character, except for the second line—and yet character voice is so inconsistent that the third line feels much closer to the second than to the first or fourth, even though the second is by an entirely different character. That's a <em>huge</em> problem.
         </p>
         <p class="mb-4">
             Note that I even made the quiz easier by including one of the few characters to possess a distinctive voice.1 Most other characters don't just suffer from a lack of consistency, but a lack of voice that often makes them sound virtually interchangeable.

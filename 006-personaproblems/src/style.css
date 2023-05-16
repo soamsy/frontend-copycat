@@ -79,4 +79,12 @@ body {
     .critique-bullet.selected {
         @apply opacity-100;
     }
+    
+    .dazzle {
+        @apply text-dazzle vanilla:font-bold;
+    }
+    
+    .ref {
+        @apply relative text-xs bottom-2;
+    }
 }
