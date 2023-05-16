@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, reactive } from 'vue';
+    import { ref, reactive, provide } from 'vue';
 import { mod } from '../../utils.js';
 import begin from './begin.vue';
 import ce1 from './ce1.vue';
@@ -56,6 +56,9 @@ const prev = () => {
 const next = () => {
     selectedCritique.value = mod(selectedCritique.value + 1, critiques.length);
 }
+
+provide('prev', prev);
+provide('next', next);
 
 const bulletClass = (index) => {
     let classes = ['critique-bullet'];

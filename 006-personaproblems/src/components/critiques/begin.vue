@@ -1,3 +1,8 @@
+<script setup>
+    import { inject } from 'vue';
+
+    const next = inject('next');
+</script>
 <template>
     <div class="p-20 bg-black text-white text-lg">
         <h2 class="mb-6 text-3xl font-extrabold tracking-wide"> A <span class="rl-bw rotate-[-2deg]">N</span>ote Bef<span class="rl-bw rotate-2">o</span>re We Beg<span class="rl-bw">i</span>n</h2>
@@ -20,7 +25,7 @@
             My hope is that what follows will help people demand better of
             publishers, ultimately resulting in better games for everyone.
         </p>
-        <button class="mb-6 py-2 px-4 text-xl font-semibold border-2 border-persona-red text-persona-red">Click here to start →</button>
+        <button @click="next()" class="mb-6 py-2 px-4 text-xl font-semibold border-2 border-persona-red text-persona-red">Click here to start →</button>
         <hr class="mb-3"/>
         <p class="text-sm relative">
             <span class="absolute left-[-1rem]">1:</span>

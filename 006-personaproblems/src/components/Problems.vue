@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, useSlots, onMounted, watch } from 'vue';
+import { ref, computed, inject } from 'vue';
 
 const lang = ref('EN');
 
@@ -13,6 +13,9 @@ const props = defineProps({
 const altExists = computed(() => {
     return props.script.some(line => line.textALT);
 })
+
+const prev = inject('prev');
+const next = inject('next');
 
 </script>
 <template>
@@ -43,8 +46,8 @@ const altExists = computed(() => {
             <slot name="critique"></slot>
         </div>
         <div class="mb-[-1rem] flex justify-between text-lg tracking-wide text-persona-red">
-            <div class="p-2 flex gap-x-2 opacity-80 hover:opacity-100 cursor-pointer group"><span>←</span><span class="group-hover:underline">Previous</span></div>
-            <div class="p-2 flex gap-x-2 opacity-80 hover:opacity-100 cursor-pointer group"><span class="group-hover:underline">Next</span><span>→</span></div>
+            <div @click="prev()" class="p-2 flex gap-x-2 opacity-80 hover:opacity-100 cursor-pointer group"><span>←</span><span class="group-hover:underline">Previous</span></div>
+            <div @click="next()" class="p-2 flex gap-x-2 opacity-80 hover:opacity-100 cursor-pointer group"><span class="group-hover:underline">Next</span><span>→</span></div>
         </div>
     </div>
 </template>
