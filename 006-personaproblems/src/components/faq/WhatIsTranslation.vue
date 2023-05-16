@@ -1,10 +1,10 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white rotate-2">
+    <div class="mt-14 p-3 bg-black text-white lg:rotate-2 relative">
         <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-3 text-3xl text-persona-red bg-black border-persona-red border-2">#1</div>
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
             Wh<span class="rl-br rotate-[4deg]">a</span>t is <span class="rl-br rotate-[3deg]">t</span>ransl<span class="rl-br rotate-[-2deg]">a</span>tion?
         </h2>
-        <div class="m-16 mt-1 bg-black text-white rotate-[-2deg] text-lg leading-snug">
+        <div class="m-16 mt-1 bg-black text-white lg:rotate-[-2deg] text-lg leading-snug relative">
             <p class="mb-6">I'll start with what translation is, and what translation is not.</p>
             <p class="font-bold">Translation is:</p>
             <ul class="px-6 py-4 ml-5">

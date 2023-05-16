@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white rotate-[-3deg]">
+    <div class="mt-14 p-3 bg-black text-white lg:rotate-[-3deg] relative">
         <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[-3deg] text-3xl text-persona-red bg-black border-persona-red border-2">#2</div>
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
             W<span class="rl-br rotate-3">h</span>at does g<span class="rl-br
                 rotate-1">o</span>od look li<span class="rl-br
                 rotate-[-3deg]">k</span>e?
         </h2>
-        <div class="m-16 mt-12 bg-black text-white rotate-[3deg] text-lg leading-snug">
+        <div class="m-16 mt-12 bg-black text-white lg:rotate-[3deg] text-lg leading-snug relative">
             <p class="mb-6">
                 Translation can be a murky concept, so first I'll define a
                 standard to measure against: <span class="italic font-semibold"> imagine if translation

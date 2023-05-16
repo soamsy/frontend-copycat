@@ -43,8 +43,8 @@ import Defense from './components/defenses/Defenses.vue';
             "Y<span class="rl-rb rotate-[6deg]">a</span>kiso<span class="rl-rb rotate-[-1deg]">b</span>a Pa<span class="rl-rb rotate-[2deg]">n</span>."
           </div>
         </Carousel>
-        <div class="p-14 mt-20 bg-black text-white rotate-2 text-lg">
-          <div class="rotate-[-2deg]">
+        <div class="p-14 mt-20 bg-black text-white lg:rotate-2 text-lg">
+          <div class="lg:rotate-[-2deg]">
             <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Cuttin<span class="rl-bw rotate-3">g</span> to the C<span class="rl-bw rotate-[-2deg]">h</span>ase</h2>
             <p class="mb-6">Persona 5 is out in English, and it's arrived with a shower of praise from critics and fans alike. This should come as little surprise to anyone who played the game in Japanese. It's brilliant and innovative, and very fun.</p>
             <p class="mb-6 font-bold">But, there's a problem: the translation is riddled with errors.</p>
@@ -58,8 +58,8 @@ import Defense from './components/defenses/Defenses.vue';
             </div> -->
           </div>
         </div>
-        <div class="p-14 mt-2 bg-black text-white border-t-4 border-persona-red rotate-[-2deg] text-lg">
-          <div class="rotate-[3deg]">
+        <div class="p-14 mt-2 bg-black text-white border-t-4 border-persona-red lg:rotate-[-2deg] text-lg">
+          <div class="lg:rotate-[3deg]">
             <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Ho<span class="rl-bw rotate-[-1deg]">w</span> Bad <span class="rl-bw rotate-[5deg]">i</span>s Bad?</h2>
             <p class="mb-6">
               The baseline for any translation is this: readers of the

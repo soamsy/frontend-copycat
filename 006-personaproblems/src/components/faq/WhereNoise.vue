@@ -1,10 +1,10 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white rotate-[-1deg]">
+    <div class="mt-14 p-3 bg-black text-white lg:rotate-[-1deg] relative">
         <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[4deg] text-3xl text-persona-red bg-black border-persona-red border-2">#4</div>
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
             Whe<span class="rl-br rotate-[2deg]">r</span>e's all th<span class="rl-br rotate-[4deg]">e</span> noi<span class="rl-br rotate-[-2deg]">s</span>e?
         </h2>
-        <div class="m-16 mt-12 bg-black text-white rotate-[1deg] text-lg leading-snug relative">
+        <div class="m-16 mt-12 bg-black text-white lg:rotate-[1deg] text-lg leading-snug relative">
             <p class="mb-6">
                 There <i>have</i> been complaints, especially by industry
                 professionals. However, you'd be hard pressed to find a major

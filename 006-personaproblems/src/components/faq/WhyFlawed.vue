@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white rotate-[1deg]">
+    <div class="mt-14 p-3 bg-black text-white lg:rotate-[1deg] relative">
         <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] text-3xl text-persona-red bg-black border-persona-red border-2">#3</div>
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
             How <span class="rl-br rotate-3">d</span>id thi<span class="rl-br
                 rotate-[-2deg]">s</span> hap<span class="rl-br
                 rotate-[3deg]">p</span>en?
         </h2>
-        <div class="m-16 mt-12 bg-black text-white rotate-[-1deg] text-lg leading-snug">
+        <div class="m-16 mt-12 bg-black text-white lg:rotate-[-1deg] text-lg leading-snug relative">
             <p class="mb-6">
                 Unfortunately, there's no way to know for sure without Atlus
                 telling us themselves or one of the translation staff coming
