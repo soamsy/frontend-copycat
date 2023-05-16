@@ -5,7 +5,7 @@ import { mod } from '../utils.js';
 const slots = useSlots();
 const currentIndex = ref(0);
 const slidingAway = ref(false);
-const hidden = ref(true);
+const hidden = ref(false);
 const nextIndex = ref(0);
 
 const count = computed(() => {
@@ -32,7 +32,7 @@ const slideTo = (i) => {
     currentTimeout = setTimeout(() => {
         currentIndex.value = nextIndex.value;
         slidingAway.value = false;
-        hidden.value = false;
+        hidden.value = true;
         elapsed = 0;
         currentTimeout = null;
         resetInterval();
@@ -40,9 +40,9 @@ const slideTo = (i) => {
 };
 
 watch(hidden, (newVal) => {
-    if (!newVal) {
+    if (newVal) {
         setTimeout(() => {
-            hidden.value = true;
+            hidden.value = false;
         }, 10);
     }
 });
@@ -55,16 +55,23 @@ const next = () => {
     slideTo(mod(nextIndex.value + 1, count.value));
 }
 
-const slideClass = () => {
-    let classes = ['max-w-3xl', 'transition-all', 'duration-700', 'ease'];
+const staticSlideClass = () => {
+    let classes = ['transition-all', 'duration-300', 'ease'];
+    if (slidingAway.value) {
+        classes.push('hidden opacity-0');
+    } else if (hidden.value) {
+        classes.push('opacity-20');
+    }
+    return classes.join(' ');
+}
+
+const slidingSlideClass = () => {
+    let classes = ['transition-all', 'duration-700', 'ease'];
     if (slidingAway.value) {
         classes.push('my-dip');
+    } else {
+        classes.push('hidden');
     }
-
-    if (!hidden.value)
-        classes.push('opacity-0')
-    else
-        classes.push('opacity-100');
     return classes.join(' ');
 }
 
@@ -101,7 +108,10 @@ onMounted(() => {
 <template>
     <div class="flex justify-between items-center select-none">
         <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
-        <div :class="slideClass()">
+        <div class="max-w-3xl" :class="staticSlideClass()">
+            <currentSlide />
+        </div>
+        <div class="max-w-3xl" :class="slidingSlideClass()">
             <currentSlide />
         </div>
         <button @click="next()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] mr-5">›</button>
