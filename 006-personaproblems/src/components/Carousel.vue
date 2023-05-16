@@ -99,7 +99,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center select-none">
         <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
         <div :class="slideClass()">
             <currentSlide />

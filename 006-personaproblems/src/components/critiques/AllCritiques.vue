@@ -79,7 +79,7 @@ const rotation = () => {
 
 
 <template>
-    <div class="mx-8 mt-28 mb-16 flex justify-between items-center text-backdrop">
+    <div class="mx-8 mt-28 mb-16 flex justify-between items-center text-backdrop select-none">
         <button @click="prev()" class="text-[5rem] font-extrabold opacity-30 hover:opacity-100 transition-all duration-200 mt-[-1rem] ml-5">‹</button>
         <div class="flex justify-center items-center">
             <button v-for="(c, index) in critiques" @click="selectedCritique = index" class="group p-1 relative">
