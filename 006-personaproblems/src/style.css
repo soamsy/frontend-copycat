@@ -42,7 +42,7 @@ body {
         position: absolute;
         font-weight: 700;
         left: 1rem;
-        @apply text-backdrop-bg;
+        @apply text-content-highlight;
     }
     
     .faq-bullet-red::before {
