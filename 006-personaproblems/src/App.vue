@@ -50,12 +50,12 @@ import Defense from './components/defenses/Defenses.vue';
             <p class="mb-6 font-bold">But, there's a problem: the translation is riddled with errors.</p>
             <p class="mb-6">That's not to say it's unreadable, or completely without merit. But for a massive RPG from a highly successful franchise, it falls incredibly short of the standard it should be held to. A video game is a professional work, no different from any other form of media. Yet no other form of media would ever get away with the number of errors found in Persona 5's English script.</p>
             <p class="mb-10 font-bold">This isn't the 1990s, when localization was still young and errors were endemic. Nor is Persona 5 a small game, or an insignificant one.</p>
-            <div class="flex justify-center items-center gap-x-4">
+            <!-- <div class="flex justify-center items-center gap-x-4">
               <div class="absolute left-8 text-2xl font-extrabold text-persona-red">Toggle theme:</div>
               <button class="py-2 px-6 font-extrabold bg-persona-red text-black">Vivid</button>
               <button class="py-2 px-6 font-extrabold">Relaxed</button>
               <button class="py-2 px-6 font-extrabold">Vanilla</button>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="p-14 mt-2 bg-black text-white border-t-4 border-persona-red rotate-[-2deg] text-lg">
