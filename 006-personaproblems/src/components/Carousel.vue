@@ -43,7 +43,7 @@ watch(hidden, (newVal) => {
     if (newVal) {
         setTimeout(() => {
             hidden.value = false;
-        }, 10);
+        }, 50);
     }
 });
 
