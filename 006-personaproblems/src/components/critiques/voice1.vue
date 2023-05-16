@@ -15,19 +15,19 @@
         <p class="mb-4">
             Here's a quiz: Each line above is said by one of two characters. Which lines belong to each character? Make a mental note of your guess before continuing on.
         </p>
-        <p class="mb-4">
+        <p class="mb-4 relative">
             If you're ready, here's the answer key:
-            <ul>
-                <li>
+            <ul class="px-6 py-4 ml-5">
+                <li class="p-bullet-red">
                     Line #1: Character A
                 </li>
-                <li>
+                <li class="p-bullet-red">
                     Line #2: Character B
                 </li>
-                <li>
+                <li class="p-bullet-red">
                     Line #3: Character A
                 </li>
-                <li>
+                <li class="p-bullet-red">
                     Line #4: Character A
                 </li>
             </ul>
