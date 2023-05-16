@@ -7,7 +7,7 @@
             aspect of localization, which means I haven't properly addressed
             other failings such as bad typography, untranslated images and
             video, and voiced lines that are unsubbed even when Japanese audio
-            is enabled.1 Nor have I dedicated time to the sometimes strange
+            is enabled.<span class="ref">1</span> Nor have I dedicated time to the sometimes strange
             handling of honorifics. For those aspects and more, I'll have to
             merely conclude by saying that there are few areas in which Persona
             5's localization isn't lacking.

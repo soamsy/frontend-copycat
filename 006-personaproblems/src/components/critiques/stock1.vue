@@ -16,14 +16,15 @@
             Above are ten examples of the stock translation phrase “it can't be
             helped,” with many more instances in the script than I can list.
             While using the phrase is fine on occasion, relying on it by
-            default is lazy and results in dull, repetitive writing.1
+            default is lazy and results in dull, repetitive writing.<span class="ref">1</span>
         </p>
         <p class="mb-4">
             Also consider: how often do you hear actual human beings use this
             phrase?
         </p>
-        <hr/>
-        <p class="">
+        <hr class="mb-3"/>
+        <p class="relative text-sm">
+            <span class="absolute left-[-1rem]">1:</span>
             About as dull and repetitive as if it were done by a machine, in
             fact. Running the second-to-last line through Google Translate
             yields “It can not be helped in order to ascertain the truth” as
