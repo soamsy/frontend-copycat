@@ -1,14 +1,21 @@
 <script>
+    import img1 from '../assets/RBMF2018.png'
+    import img2 from '../assets/meister.png'
+    import img3 from '../assets/yuzame-join-tokyosento.png'
+    import img4 from '../assets/akairo.png'
+    import img5 from '../assets/iwanttotellyou_top.png'
+    import img6 from '../assets/plusa_top.png'
+    
     export default {
         data() {
             return {
                 slides: [
-                    "src/assets/RBMF2018.png",
-                    "src/assets/meister.png",
-                    "src/assets/yuzame-join-tokyosento.png",
-                    "src/assets/akairo.png",
-                    "src/assets/iwanttotellyou_top.png",
-                    "src/assets/plusa_top.png"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5,
+                    img6,
                 ],
                 current: 0,
                 transitioning: false,
