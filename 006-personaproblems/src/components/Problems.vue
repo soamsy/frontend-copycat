@@ -44,6 +44,7 @@ const next = inject('next');
         <div class="mb-4 font-bold text-persona-red tracking-wide">The Criti<span class="rl-br rotate-3">q</span>ue:</div>
         <div class="mb-6 ml-10">
             <slot name="critique"></slot>
+            <p v-if="altExists" class="mt-4 text-persona-red">Click on ALT above to view what a different approach to the scene might look like.</p>
         </div>
         <div class="mb-[-1rem] flex justify-between text-lg tracking-wide text-persona-red">
             <div @click="prev()" class="p-2 flex gap-x-2 opacity-80 hover:opacity-100 cursor-pointer group"><span>←</span><span class="group-hover:underline">Previous</span></div>
