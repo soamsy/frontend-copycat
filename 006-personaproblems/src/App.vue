@@ -107,7 +107,7 @@ provide('theme', theme);
     </div>
     <footer class="bg-black w-full">
       <div class="max-w-4xl mx-auto">
-        <div class="mt-12 flex flex-center gap-x-4 text-sm text-gray-500">
+        <div class="mt-12 px-4 py-2 flex flex-col gap-y-2 lg:flex-row flex-center gap-x-2 text-sm text-gray-500">
           <div class="flex-1">
             This site was written and designed by Connor Krammer. If you like it,
             you should follow him on Twitter.
