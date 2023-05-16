@@ -1,6 +1,6 @@
 <template>
-    <div class="p-20 bg-black text-white text-lg">
-        <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Wrapp<span class="rl-bw rotate-3">i</span>ng U<span class="rl-bw rotate-1">p</span></h2>
+    <div class="p-20 bg-content-bg text-content-fg text-lg">
+        <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Wrapp<span class="rl-content rotate-3">i</span>ng U<span class="rl-content rotate-1">p</span></h2>
         <p class="mb-6">
             I haven't listed every mistake in Persona 5, or even a substantial
             fraction of them. I've also been forced to focus on the translation

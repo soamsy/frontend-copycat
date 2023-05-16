@@ -1,8 +1,15 @@
+<script setup>
+    import process from '../../assets/translation-process.png';
+    import processLight from '../../assets/translation-process-light.png';
+    import { inject } from 'vue';
+    
+    const theme = inject('theme');
+</script>
 <template>
-    <div class="mt-14 p-3 bg-black text-white relative">
-        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] text-3xl text-persona-red bg-black border-persona-red border-2">#1</div>
-        <div class="m-16 mt-12 bg-black text-white text-lg leading-snug relative">
-            <p class="mb-6 text-persona-red">
+    <div class="mt-14 p-3 bg-content-bg text-content-fg relative">
+        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] pin-number">#1</div>
+        <div class="m-16 mt-12 bg-content-bg text-content-fg text-lg leading-snug relative">
+            <p class="mb-6 text-alert">
                 “I prefer literal translations because they're more faithful.”
             </p>
             <p class="mb-6">
@@ -32,7 +39,7 @@
             <p class="mb-6">
                 So how does that factor into translation?
             </p>
-            <img class="mb-6" src="/src/assets/translation-process.png" alt="Translation process">
+            <img class="mb-6" :src="theme === 'vanilla' ? processLight : process" alt="Translation process">
             <p class="mb-6">
                 The processes behind literal translation and faithful
                 translation look fundamentally different. Namely, faithful

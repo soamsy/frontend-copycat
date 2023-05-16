@@ -16,9 +16,9 @@ faq.set('nothingwrong',       { question: 'There\'s nothing wrong.', component: 
 
 </script>
 <template>
-    <div class="mt-20 mb-16 flex flex-col items-center">
+    <div class="mt-20 mb-16 flex flex-col items-center text-backdrop">
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide">
-            Defenses of Bad Translation
+            Defe<span class="rl-backdrop rotate-3">n</span>ses of Bad Tr<span class="rl-backdrop rotate-[4deg]">a</span>ns<span class="rl-backdrop rotate-[-1deg]">l</span>ation
         </h2>
         <ul class="small-caps text-xl font-black">
             <li v-for="[key, value] in faq" @click="selected = key" class="relative p-1 cursor-pointer hover:underline">

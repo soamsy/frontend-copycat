@@ -1,6 +1,6 @@
 <template>
-    <div class="p-20 bg-black text-white text-lg">
-        <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Credi<span class="rl-bw rotate-3">t</span>s</h2>
+    <div class="p-20 bg-content-bg text-content-fg text-lg">
+        <h2 class="mb-6 text-3xl font-extrabold tracking-wide">Credi<span class="rl-content rotate-3">t</span>s</h2>
         <p class="mb-6">
             This site was created and designed by Connor Krammer. You can get
             in touch with him on Twitter or via email at

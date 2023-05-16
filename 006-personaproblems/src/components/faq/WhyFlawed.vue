@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white lg:rotate-[1deg] relative">
-        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] text-3xl text-persona-red bg-black border-persona-red border-2">#3</div>
-        <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
-            How <span class="rl-br rotate-3">d</span>id thi<span class="rl-br
-                rotate-[-2deg]">s</span> hap<span class="rl-br
+    <div class="mt-14 p-3 bg-content-bg text-content-fg lg:rotate-[1deg] relative">
+        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] pin-number">#3</div>
+        <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-content-highlight">
+            How <span class="rl-highlight rotate-3">d</span>id thi<span class="rl-highlight
+                rotate-[-2deg]">s</span> hap<span class="rl-highlight
                 rotate-[3deg]">p</span>en?
         </h2>
-        <div class="m-16 mt-12 bg-black text-white lg:rotate-[-1deg] text-lg leading-snug relative">
+        <div class="m-16 mt-12lg:rotate-[-1deg] text-lg leading-snug relative">
             <p class="mb-6">
                 Unfortunately, there's no way to know for sure without Atlus
                 telling us themselves or one of the translation staff coming
@@ -14,7 +14,7 @@
                 underlying reasons may have been.
             </p>
             <p class="mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-3 font-extrabold bg-persona-red text-black left-[-2.7rem]">#1:</span>
+                <span class="absolute px-1 rotate-3 font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#1:</span>
                 The translation team was massive.
             </p>
             <p class="mb-6">
@@ -37,7 +37,7 @@
                 actually liable to worsen the stylistic inconsistencies.
             </p>
             <p class="mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-[-3deg] font-extrabold bg-persona-red text-black left-[-2.7rem]">#2:</span>
+                <span class="absolute px-1 rotate-[-3deg] font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#2:</span>
                 The release was delayed for localization reasons.
             </p>
             <p class="mb-6">
@@ -66,7 +66,7 @@
                 point in time.
             </p>
             <p class="mt-6 mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-[3deg] font-extrabold bg-persona-red text-black left-[-2.7rem]">#3:</span>
+                <span class="absolute px-1 rotate-[3deg] font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#3:</span>
                 Even voiced lines contain outright errors.
             </p>
             <p class="mb-6">
@@ -74,7 +74,7 @@
                 reflect character voice and fix lingering mistakes. Not so with
                 Persona 5.
             </p>
-            <p class="mb-4 flex justify-center items-center gap-x-4 text-sm text-persona-red"><span>*</span><span>*</span><span>*</span></p>
+            <p class="mb-4 flex justify-center items-center gap-x-4 text-sm text-content-highlight"><span>*</span><span>*</span><span>*</span></p>
             <p class="mb-6">
                 Now, it's difficult to say exactly what happened. Perhaps there were unreasonable time constraints. Perhaps the localization team was underqualified. Perhaps Atlus had internal issues between its American and Japanese branches—it's not unheard of for international teams to cooperate poorly, and that often hurts localization efforts. Perhaps it was all of these.
             </p>

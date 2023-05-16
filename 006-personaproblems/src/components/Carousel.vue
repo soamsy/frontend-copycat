@@ -108,7 +108,7 @@ onMounted(() => {
     </div>
     <div class="my-3 flex justify-center items-center gap-x-1">
         <div class="pl-2 inline-block cursor-pointer" v-for="index in count">
-            <div @click="slideTo(index-1)" class="w-3 h-3 rounded-full hover:!bg-black" :style="paginationStyle(index-1)"></div>
+            <div @click="slideTo(index-1)" class="w-3 h-3 rounded-full hover:!bg-backdrop" :style="paginationStyle(index-1)"></div>
         </div>
     </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white relative">
-        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] text-3xl text-persona-red bg-black border-persona-red border-2">#3</div>
-        <div class="m-16 mt-12 bg-black text-white text-lg leading-snug relative">
-            <p class="mb-6 text-persona-red">
+    <div class="mt-14 p-3 bg-content-bg text-content-fg relative">
+        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[3deg] pin-number">#3</div>
+        <div class="m-16 mt-12 bg-content-bg text-content-fg text-lg leading-snug relative">
+            <p class="mb-6 text-alert">
                 “I like that I can feel the Japanese behind the translation.”
             </p>
             <p class="mb-6">

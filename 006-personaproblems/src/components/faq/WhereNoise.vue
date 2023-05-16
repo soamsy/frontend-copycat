@@ -1,10 +1,10 @@
 <template>
-    <div class="mt-14 p-3 bg-black text-white lg:rotate-[-1deg] relative">
-        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[4deg] text-3xl text-persona-red bg-black border-persona-red border-2">#4</div>
-        <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
-            Whe<span class="rl-br rotate-[2deg]">r</span>e's all th<span class="rl-br rotate-[4deg]">e</span> noi<span class="rl-br rotate-[-2deg]">s</span>e?
+    <div class="mt-14 p-3 bg-content-bg text-content-fg lg:rotate-[-1deg] relative">
+        <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-[4deg] pin-number">#4</div>
+        <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-content-highlight">
+            Whe<span class="rl-highlight rotate-[2deg]">r</span>e's all th<span class="rl-highlight rotate-[4deg]">e</span> noi<span class="rl-highlight rotate-[-2deg]">s</span>e?
         </h2>
-        <div class="m-16 mt-12 bg-black text-white lg:rotate-[1deg] text-lg leading-snug relative">
+        <div class="m-16 mt-12 lg:rotate-[1deg] text-lg leading-snug relative">
             <p class="mb-6">
                 There <i>have</i> been complaints, especially by industry
                 professionals. However, you'd be hard pressed to find a major
@@ -21,7 +21,7 @@
                 that is:
             </p>
             <p class="mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-3 font-extrabold bg-persona-red text-black left-[-2.7rem]">#1:</span>
+                <span class="absolute px-1 rotate-3 font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#1:</span>
                 Japanese media is relatively niche, and started out even more so.
             </p>
             <p class="mb-6">
@@ -44,7 +44,7 @@
                 <li class="p-bullet-red">Translation errors</li>
             </ul>
             <p class="mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-[-3deg] font-extrabold bg-persona-red text-black left-[-2.7rem]">#2:</span>
+                <span class="absolute px-1 rotate-[-3deg] font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#2:</span>
                 Early official translations couldn't be trusted.
             </p>
             <p class="mb-6">
@@ -74,7 +74,7 @@
                 All it took was a glance and anyone could tell.
             </p>
             <p class="mt-6 mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-[3deg] font-extrabold bg-persona-red text-black left-[-2.7rem]">#3:</span>
+                <span class="absolute px-1 rotate-[3deg] font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#3:</span>
                 Japanese translation has a global audience.
             </p>
             <p class="mb-6">
@@ -93,7 +93,7 @@
                 understand for some non-native speakers.
             </p>
             <p class="mt-6 mb-6 font-bold relative">
-                <span class="absolute px-1 rotate-[-1deg] font-extrabold bg-persona-red text-black left-[-2.7rem]">#4:</span>
+                <span class="absolute px-1 rotate-[-1deg] font-extrabold bg-content-highlight text-content-bg left-[-2.7rem]">#4:</span>
                 Video games are more than just text.
             </p>
             <p class="mb-6">
@@ -104,7 +104,7 @@
                 greatly limits how good their performance can be and results in
                 an inferior dub.
             </p>
-            <p class="mb-4 flex justify-center items-center gap-x-4 text-sm text-persona-red"><span>*</span><span>*</span><span>*</span></p>
+            <p class="mb-4 flex justify-center items-center gap-x-4 text-sm text-content-highlight"><span>*</span><span>*</span><span>*</span></p>
             <p class="mb-6">
                 The result of the above factors (and more) is that complaints
                 about awkward, literal translation are often countered with

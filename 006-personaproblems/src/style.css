@@ -14,15 +14,23 @@ body {
     }
     
     .rl-bw {
-        @apply ransom-letter bg-white text-black;
+        @apply ransom-letter bg-[#EEE] text-black;
     }
     
-    .rl-rb {
-        @apply ransom-letter bg-black text-persona-red;
+    .rl-backdrop {
+        @apply ransom-letter bg-backdrop-fg text-backdrop-bg;
     }
-
-    .rl-br {
-        @apply ransom-letter text-black bg-persona-red;
+    
+    .rl-content {
+        @apply ransom-letter bg-content-fg text-content-bg;
+    }
+    
+    .rl-highlight {
+        @apply ransom-letter bg-content-highlight text-content-bg;
+    }
+    
+    .pin-number {
+        @apply bg-backdrop-fg text-backdrop-bg border-backdrop-bg text-3xl border-2;
     }
     
     .p-quote {
@@ -34,7 +42,7 @@ body {
         position: absolute;
         font-weight: 700;
         left: 1rem;
-        @apply text-persona-red;
+        @apply text-backdrop-bg;
     }
     
     .faq-bullet-red::before {
@@ -57,7 +65,7 @@ body {
     }
     
     .critique-bullet {
-        @apply w-2 h-2 m-1 rounded-full bg-black opacity-40 group-hover:opacity-100;
+        @apply w-2 h-2 m-1 rounded-full bg-backdrop-fg opacity-40 group-hover:opacity-100;
     }
     
     .critique-bullet-wrap {
