@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-14 p-2 bg-black text-white rotate-2">
+    <div class="mt-14 p-3 bg-black text-white rotate-2">
         <div class="absolute px-2 py-3 top-[-1rem] right-0 rotate-3 text-3xl text-persona-red bg-black border-persona-red border-2">#1</div>
         <h2 class="mb-6 text-4xl font-extrabold tracking-wide text-persona-red">
             Wh<span class="rl-br rotate-[4deg]">a</span>t is <span class="rl-br rotate-[3deg]">t</span>ransl<span class="rl-br rotate-[-2deg]">a</span>tion?
@@ -13,7 +13,7 @@
                 <li class="p-bullet-red">Conveying foreign concepts gracefully and without distortion</li>
                 <li class="p-bullet-red">Allowing readers to enjoy the same experience in both languages</li>
             </ul>
-            <p>Translation is not:</p>
+            <p class="font-bold">Translation is not:</p>
             <ul class="px-6 py-4 ml-5">
                 <li class="p-bullet-red">A word-by-word conversion of language A to language B</li>
                 <li class="p-bullet-red">Removing content that is difficult or controversial to readers</li>

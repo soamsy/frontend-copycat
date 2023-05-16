@@ -1,16 +1,10 @@
 <script setup>
 import { ref, reactive } from 'vue';
 import Carousel from './components/Carousel.vue';
-import WhatIsTranslation from './components/WhatIsTranslation.vue';
+import WrappingUp from './components/WrappingUp.vue';
+import Credits from './components/Credits.vue';
+import Faq from './components/faq/Faq.vue';
 import AllCritiques from './components/critiques/AllCritiques.vue';
-
-const selected = ref('different');
-const faq = reactive(new Map());
-faq.set('different',   { question: 'How does "translation" differ from "localization"?', component: WhatIsTranslation });
-faq.set('looklike',    { question: 'What does "translation" look like?', component: WhatIsTranslation });
-faq.set('flawed',      { question: 'Why did Atlus release such a flawed translation?', component: WhatIsTranslation });
-faq.set('complaining', { question: 'Why aren\'t more people complaining?', component: WhatIsTranslation });
-faq.set('wrong',       { question: 'Can you show me what\'s wrong?', component: WhatIsTranslation })
 </script>
 
 <template>
@@ -82,24 +76,36 @@ faq.set('wrong',       { question: 'Can you show me what\'s wrong?', component: 
         </div>
       </section>
       <section class="max-w-[52rem] mx-auto">
-        <div class="my-20 ml-12 flex gap-x-20">
-          <div class="flex flex-col justify-around text-5xl font-extrabold">
-            <div class="rl-rb rotate-2 !p-1 w-min">A</div>
-            <div class="rl-rb rotate-6 !p-1 w-min">S</div>
-            <div class="rl-rb rotate-[-3deg] !p-1 w-min">K</div>
-          </div>
-          <ul class="small-caps text-xl font-black">
-            <li v-for="[key, value] in faq" @click="selected = key" class="relative p-1 cursor-pointer hover:underline">
-              <span :class="'faq-bullet-red' + ((key === selected) ? ' selected' : '')">{{ value.question }}</span>
-            </li>
-          </ul>
-        </div>
-        <component :is="faq.get(selected).component"></component>
+        <Faq></Faq>
       </section>
       <section class="max-w-4xl mx-auto">
           <AllCritiques></AllCritiques>
       </section>
+      <section class="max-w-4xl mx-auto my-24">
+        <WrappingUp></WrappingUp>
+      </section>
+      <section class="max-w-4xl mx-auto my-24">
+        <Credits></Credits>
+      </section>
     </div>
+    <footer class="bg-black w-full">
+      <div class="max-w-4xl mx-auto">
+        <div class="mt-12 flex flex-center gap-x-4 text-sm text-gray-500">
+          <div class="flex-1">
+            This site was written and designed by Connor Krammer. If you like it,
+            you should follow him on Twitter.
+          </div>
+          <div class="flex-1">
+            “Persona 5 MC Red Version 2” by tonyp2121 is Licensed under CC BY
+            3.0. Light theme version is recolored from original.
+          </div>
+          <div class="flex-1">
+            Persona 5 is the property of Atlus.
+          </div>
+        </div>
+        <div class="mt-8 h-1"></div>
+      </div>
+    </footer>
   </div>
 </template>
 
