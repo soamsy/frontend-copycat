@@ -2,6 +2,7 @@ set -ex
 
 build_sub_directory() {
     cd $1
+    npm install
     npm run build
     mkdir -p ../public/$1
     if [ -d "dist" ]; then
