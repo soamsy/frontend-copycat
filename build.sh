@@ -16,7 +16,7 @@ build_sub_directory() {
 LINKS=''
 for dir in $(ls -d -- [0-9][0-9][0-9]*);do 
     build_sub_directory $dir
-    LINKS="$LINKS <a target=\"_blank\" href=\"/$dir\">$dir</a>\n"
+    LINKS="$LINKS <a target=\"_blank\" href=\"$dir\">$dir</a>\n"
 done
 
 cp index.html public/index.html
